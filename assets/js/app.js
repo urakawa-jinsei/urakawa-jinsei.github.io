@@ -1,5 +1,4 @@
-const RSS_FEED_URL = 'https://zenn.dev/urakawa_jinsei/feed';
-const RSS_PROXY_URL = `https://r.jina.ai/${RSS_FEED_URL}`;
+const FEED_JSON_URL = 'assets/data/zenn-feed.json';
 
 const state = {
   articles: [],
@@ -22,17 +21,13 @@ document.addEventListener('DOMContentLoaded', async () => {
   elements.currentYear.textContent = new Date().getFullYear();
 
   try {
-    const feedText = await loadRssFeed();
-    const articles = parseRssFeed(feedText);
-    if (!articles.length) {
-      throw new Error('No articles found in feed');
-    }
+    const articles = await loadArticles();
     state.articles = articles;
     buildFilterButtons();
     renderArticles();
   } catch (error) {
-    console.error('Failed to load RSS feed', error);
-    renderError('ZennのRSSフィードを取得できませんでした。時間を空けて再度お試しください。');
+    console.error('Failed to load Zenn articles', error);
+    renderError('Zennの記事情報を取得できませんでした。時間を空けて再度お試しください。');
   }
 
   elements.searchInput.addEventListener('input', (event) => {
@@ -41,74 +36,32 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
 });
 
-async function loadRssFeed() {
-  try {
-    return await fetchFeedText(RSS_FEED_URL);
-  } catch (error) {
-    console.warn('Direct RSS fetch failed. Trying proxy...', error);
-    return await fetchFeedText(RSS_PROXY_URL);
-  }
-}
-
-async function fetchFeedText(url) {
-  const response = await fetch(url, {
+async function loadArticles() {
+  const response = await fetch(FEED_JSON_URL, {
+    cache: 'no-cache',
     headers: {
-      Accept: 'application/atom+xml, application/xml, text/xml',
+      Accept: 'application/json',
     },
   });
   if (!response.ok) {
     throw new Error(`Failed to load feed: ${response.status} ${response.statusText}`);
   }
-  return response.text();
-}
 
-function parseRssFeed(feedText) {
-  const parser = new DOMParser();
-  const doc = parser.parseFromString(feedText, 'application/xml');
-  const parseError = doc.querySelector('parsererror');
-  if (parseError) {
-    throw new Error(parseError.textContent || 'Unable to parse RSS feed');
+  const payload = await response.json();
+  if (!payload || !Array.isArray(payload.articles)) {
+    throw new Error('Invalid feed structure received');
   }
 
-  const entries = Array.from(doc.querySelectorAll('entry'));
-  return entries
-    .map((entry) => {
-      const title = entry.querySelector('title')?.textContent?.trim() ?? '';
-      const linkElement = entry.querySelector('link[rel="alternate"]') ?? entry.querySelector('link');
-      const url = linkElement?.getAttribute('href') ?? '';
-      const publishedAt =
-        entry.querySelector('published')?.textContent?.trim() ??
-        entry.querySelector('updated')?.textContent?.trim() ??
-        '';
-      const rawSummary =
-        entry.querySelector('summary')?.textContent ?? entry.querySelector('content')?.textContent ?? '';
-      const categories = Array.from(entry.querySelectorAll('category'))
-        .map((node) => node.getAttribute('term')?.trim() ?? node.textContent?.trim() ?? '')
-        .filter(Boolean);
-
-      if (!title || !url) {
-        return null;
-      }
-
-      return {
-        title,
-        url,
-        published_at: publishedAt,
-        summary: sanitizeSummary(rawSummary),
-        category: categories[0] ?? 'その他',
-        tags: categories,
-      };
-    })
-    .filter(Boolean);
-}
-
-function sanitizeSummary(summary) {
-  if (!summary) {
-    return '';
-  }
-  const temp = document.createElement('div');
-  temp.innerHTML = summary;
-  return temp.textContent?.replace(/\s+/g, ' ').trim() ?? '';
+  return payload.articles
+    .map((article) => ({
+      title: article.title?.trim() ?? '',
+      url: article.url ?? '',
+      published_at: article.published_at ?? '',
+      summary: article.summary ?? '',
+      category: article.category ?? 'その他',
+      tags: Array.isArray(article.tags) ? article.tags : [],
+    }))
+    .filter((article) => article.title && article.url);
 }
 
 function buildFilterButtons() {
@@ -169,8 +122,11 @@ function renderArticles() {
   });
 
   if (!filtered.length) {
-    elements.articleGrid.innerHTML =
-      '<p class="empty-message">条件に合う記事が見つかりませんでした。フィルターを変更してみてください。</p>';
+    const message =
+      state.articles.length === 0
+        ? '現在表示できる記事がありません。しばらくしてから再度ご確認ください。'
+        : '条件に合う記事が見つかりませんでした。フィルターを変更してみてください。';
+    elements.articleGrid.innerHTML = `<p class="empty-message">${message}</p>`;
     return;
   }
 
