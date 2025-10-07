@@ -1,4 +1,165 @@
 {
-  "last_updated": null,
-  "articles": []
+  "last_updated": "2025-10-07T06:15:07.857037+00:00",
+  "articles": [
+    {
+      "title": "PostgreSQLのパフォーマンスチューニング入門: インデックスの威力を体感せよ",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/e20e1f76f5109f",
+      "published_at": "2025-09-09T23:00:06+00:00",
+      "summary": "はじめに データベースのパフォーマンスチューニングって難しそう…と思っていませんか？ 今回は、シーケンシャルスキャン（Seq Scan）になっているクエリをインデックススキャン（Index Scan）に変えることで、クエリを劇的に高速化する手順を実測値つきでまとめます。 途中で実行計画の読み方やParallel Seq Scan / Gatherのポイントも押さえます。 EXPLAIN ANALYZE は計測オーバーヘッドが乗るので、素の実行より遅くなることがあります。数値は目安として見てください。(PostgreSQL) 環境構築（Docker） docker-comp...",
+      "category": "その他",
+      "tags": []
+    },
+    {
+      "title": "【Go】コードの読み方を学ぶ - strings.Joinを題材に",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/8706c1ccb50c97",
+      "published_at": "2025-08-26T23:00:01+00:00",
+      "summary": "はじめに Go の標準ライブラリには、効率や安全性に配慮された設計が随所に見られます。 今回は、その中でもよく使われる strings.Join を題材に、「コードをどう読み解けばよいか」を順に見ていきます。 背景・目的 例えば、このようなコードがあります。 // Join concatenates the elements of its first argument to create a single string. // The separator string sep is placed between elements in the resulting string. ...",
+      "category": "その他",
+      "tags": []
+    },
+    {
+      "title": "Makefile入門｜Goで学ぶ、はじめてのMakefile",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/a21e93692ca715",
+      "published_at": "2025-08-19T23:00:06+00:00",
+      "summary": "はじめに Goでプログラムを書いていると、 go build go run go test …など、毎回同じコマンドを入力するのが面倒になることありませんか？ そんなときに便利なのが Makefile です。 公式ドキュメントでは「依存関係に応じて必要な処理だけを実行するツール」と説明されていますが、Goプロジェクトに限って言えば 「よく使うコマンドをまとめておける便利な仕組み」 と考えるとわかりやすいです。 最小のMakefileを書いてみる まずはGoで「Hello, World」を出力するプログラムを作りましょう。 main.go package main impo...",
+      "category": "その他",
+      "tags": []
+    },
+    {
+      "title": "【Go】複数のCloud Run Jobsをモノレポで管理する",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/07da4bf827c73a",
+      "published_at": "2025-08-07T23:00:01+00:00",
+      "summary": "はじめに 本記事のゴール モノレポ構成でJobごとのディレクトリを整理 Dockerマルチステージビルドでバイナリを効率的に生成 Cloud Buildのループ処理でCI/CDを自動化 ディレクトリ構成 ディレクトリ構成 . ├── cloudbuild.yaml ├── cmd │ ├── cloud-run-jobs1 │ │ ├── Dockerfile │ │ └── main.go │ ├── cloud-run-jobs2 │ │ ├── Dockerfile │ │ └── main.go │ └── cloud...",
+      "category": "その他",
+      "tags": []
+    },
+    {
+      "title": "【Go】sqlcでbulk insertをする方法",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/065cc07cc1ad05",
+      "published_at": "2025-08-06T23:00:01+00:00",
+      "summary": "はじめに 大量データを一括で挿入したい場面は多いのではないでしょうか？ 例えばバッチ処理で数百万件のデータを扱うとき、通常のINSERT文を1件ずつ実行すると、ネットワーク往復やトランザクションオーバーヘッドで処理時間が膨大になります。 PostgreSQLが提供するCOPYプロトコルを利用したbulk insert（まとめて挿入）を使うことで、シーケンシャルなINSERTと比べて数十倍〜数百倍の高速化が可能です。 Go向けORMツールのsqlcでは、コメントに:copyfromを付与するだけでこのCOPYプロトコルを簡単に利用できます。[1] 結論 SQLファイルのコメントに:...",
+      "category": "その他",
+      "tags": []
+    },
+    {
+      "title": "gcloud storage cpで発生する storage.objects.get No such object エラーの真相",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/059d54948e3da8",
+      "published_at": "2025-07-07T23:00:01+00:00",
+      "summary": "はじめに Cloud Storageへのファイルアップロードのために、gcloud storage cpコマンドを使用すると、Cloud Loggingに、storage.objects.get No such objectというエラーが出力されます。 ファイルアップロードのコマンドをgsutil cpコマンドに変更すると、上記のエラーは出なくなります。 なぜでしょうか？ gcloud storage cpコマンドとgsutil cpコマンドの違いを調べてみました。 Cloud Logging 原因 gcloud storage cpは、パフォーマンス向上のために並列・分割アッ...",
+      "category": "その他",
+      "tags": []
+    },
+    {
+      "title": "【Go】pq: database \"xxx\" does not existにハマった話",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/0554c12d5a27d2",
+      "published_at": "2025-06-16T23:00:02+00:00",
+      "summary": "はじめに Cloud Run Jobsから、Cloud SQLへの接続確認をしていました。 正しいデータベースを指定しているはずでしたが、何度やっても、以下のエラーが発生します。 pq: database \"xxx\" does not exist なぜでしょうか？ 原因 データベース名の末尾に、空白が入っていたことが原因でした。 同じ経験をしたことがある人も多いのではないでしょうか？ 解決 デフォルトのデータベース（postgres）には接続できたので、データベース名の一覧を出力し、データベース名と、接続したいデータベース名が合っているか、それぞれのデータベース名の文字数を出...",
+      "category": "その他",
+      "tags": []
+    },
+    {
+      "title": "MCPを体験するだけ",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/b31ef87d0c6a76",
+      "published_at": "2025-06-15T23:00:01+00:00",
+      "summary": "はじめに この記事は、MCPって何？という方が、初めの一歩を踏み出してみるための記事です。 公式のチュートリアルに従って、ファイルシステムMCPサーバーを体験します。 1. Claude for Desktopをインストール https://claude.ai/downloadで、Claude for Desktopをダウンロードして、インストールします。 2. ファイルシステムMCPサーバーを追加する まず、コンピュータでClaudeメニューを開き、「設定...」を選択します。これらは、アプリウィンドウ自体にある、アカウント設定ではないことに注意して下さい。 Macでは、次...",
+      "category": "その他",
+      "tags": []
+    },
+    {
+      "title": "Cloud Run JobsのエラーをSlackに通知する",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/db5be14145cc44",
+      "published_at": "2025-05-27T23:00:01+00:00",
+      "summary": "1. Slack 通知チャネルを準備する GCP コンソール → Notification channels を開く Slack セクションで Add new をクリックし、ワークスペースとチャンネルを認可・登録する 2. Logs Explorer でクエリを作成 GCP コンソール → Logs Explorer を開く クエリ欄に以下を入力し、Run で結果を確認 resource.type=\"cloud_run_job\" severity=\"ERROR\" ( resource.labels.job_name=\"your-cloud-run-jobs-...",
+      "category": "その他",
+      "tags": []
+    },
+    {
+      "title": "【Go】pq: password authentication failed for user \"xxx\" にハマった話",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/0b4031176ff47e",
+      "published_at": "2025-05-26T23:00:01+00:00",
+      "summary": "はじめに Private IPを持ったCloud SQLに、Cloud Run Jobsから、Direct VPC Egressで接続しようとしていました。 しかし、接続がうまくいきません。 ユーザー名やパスワードはあっているはずなのに、以下のエラーが発生しました。 pq: password authentication failed for user \"xxx\" なぜでしょうか？ 修正前のコード 以下を参考に、TCPで接続する方法を選択しました。 https://cloud.google.com/sql/docs/postgres/connect-run?hl=ja#priva...",
+      "category": "その他",
+      "tags": []
+    },
+    {
+      "title": "これで完璧！Goの演算子と区切り記号を網羅するまとめ",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/20892e7813b782",
+      "published_at": "2025-05-07T23:00:06+00:00",
+      "summary": "はじめに Go 言語仕様では、演算子や句読点（トークン）があらかじめ定義され、プログラム中で特別な意味を持ちます。 知らない演算子がたくさんあったので、この機会にまとめてみました。 http://go.dev/ref/spec#Operators_and_punctuation 一覧表 トークン 説明 使用例 + 加算／正符号 sum := a + b - 減算／負符号 diff := a - b * 乗算／ポインタ参照 prod := a * b / 除算 quot := a / b % 剰余 rem := a % b << 左シフ...",
+      "category": "その他",
+      "tags": []
+    },
+    {
+      "title": "知らないとヤバい！Go言語25の予約語まとめ＆使用例",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/facf886c446dfb",
+      "published_at": "2025-05-01T23:00:01+00:00",
+      "summary": "はじめに Go 言語仕様で予約されているキーワード25個の一覧と、それぞれの説明および使用例を紹介します。 gotoやfallthroughなどは知らなかったので、良い機会になりました。 以下の語は Go 言語があらかじめ予約しているキーワードなので、変数名や関数名など自分で名前を付ける識別子には使えません。 https://go.dev/ref/spec#Keywords 一覧表 キーワード 説明 使用例 break ループ (for) や switch から抜ける for i := 0; i < 10; i++ { if i == 5 { break } ...",
+      "category": "その他",
+      "tags": []
+    },
+    {
+      "title": "「誰でも爆速で理解できる！Go のルーンリテラル10個のエスケープシーケンスまとめ」",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/5a6fbfeea9213b",
+      "published_at": "2025-04-23T23:00:01+00:00",
+      "summary": "はじめに Go 言語では、単一の Unicode コードポイントを表す整数定数を ルーンリテラル（rune literal）として扱います。ルーンリテラルはシングルクォートで囲まれた 1 文字またはエスケープシーケンスで記述し、内部的には int32（別名 rune）型として扱われます。 本記事では、公式仕様書「Rune literals」に基づき、代表的なエスケープシーケンスの一覧と、それらを使った出力例を紹介します。 一覧表 以下の表は、Go のルーンリテラルおよび文字列リテラルで利用できる主要なエスケープシーケンスをまとめたものです。各行には対応する Unicode コード...",
+      "category": "その他",
+      "tags": []
+    },
+    {
+      "title": "Goが好きです。",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/6a4444d78c1300",
+      "published_at": "2025-04-16T23:00:01+00:00",
+      "summary": "はじめに 私は、業務で2年ほどGoを書いています。 私が個人的にGoについて気に入っている点を13個紹介したいと思います。 他の言語との違いや、具体的なソースコード、コマンドも提供していますので、ぜひ試してみてください。 ! 他の言語との違いを説明していますが、他の言語を貶しているわけではないので、あらかじめご了承ください。 Goとは？ https://en.wikipedia.org/wiki/Go_(programming_language) Go言語は、2007年ごろにGoogleのエンジニア（Robert Griesemer、Rob Pike、Ken Thompson）...",
+      "category": "その他",
+      "tags": []
+    },
+    {
+      "title": "Docker Model Runnerで実現する簡単生成AIアプリケーション ～Hello GenAI実践レポート～",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/7ce3ba360fd5e1",
+      "published_at": "2025-04-08T00:33:50+00:00",
+      "summary": "Docker Model Runnerとは https://docs.docker.com/desktop/features/model-runner/ Docker Model Runner は、Docker Desktop に組み込まれた機能で、AIモデルを Docker Hub からプルし、ローカルで直接実行できるプラグインです。 この機能を使うことで、初回実行時に大容量のモデルがダウンロードされ、以降はローカルキャッシュから迅速にモデルが読み込まれます。また、OpenAI互換のAPIを介してモデルに対するプロンプト送信やチャット形式での対話が可能となり、開発者は自分のアプリケ...",
+      "category": "その他",
+      "tags": []
+    },
+    {
+      "title": "Goの進化に乗り遅れるな！modernizeパッケージでコードを現代化するリファクタリング入門",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/3efa94ac6d16e7",
+      "published_at": "2025-04-02T23:00:01+00:00",
+      "summary": "「modernize」パッケージとは？ https://pkg.go.dev/golang.org/x/tools/gopls/internal/analysis/modernize 「modernize」パッケージは、Go のツール群の中でも特に注目すべき解析器（アナライザー）です。gopls（Go 言語サーバー）に統合されており、既存のコードを最新の言語機能や標準ライブラリの改善点に沿って自動的にリファクタリングするための提案を行ってくれます。たとえば、古い if/else 構文による条件分岐を、Go 1.21 で追加された組み込みの min/max 関数に置き換えるなど、コード...",
+      "category": "その他",
+      "tags": []
+    },
+    {
+      "title": "Goでファイル操作ばかりしてる俺が語る！爆速7フォーマット実践サンプル【JSON/YAML/CSV/txt/Excel/ini/XML】",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/da7ff21f360186",
+      "published_at": "2025-03-31T01:37:11+00:00",
+      "summary": "はじめに 現在の部署に入ってから、Goでのファイル操作ばかりを行なっているので、この記事では、Goでの色々なファイルの読み書きについて説明します。 JSON https://pkg.go.dev/encoding/json inputファイル input.json { \"name\": \"John\", \"age\": 30 } 読み込みサンプルコード main.go package main import ( \"encoding/json\" // JSONエンコード/デコード用パッケージ \"fmt\" // フォーマット済み入出力...",
+      "category": "その他",
+      "tags": []
+    },
+    {
+      "title": "【無料で本が読める】GitHubリポジトリ「free-programming-books」",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/b92b25b31defe2",
+      "published_at": "2025-03-25T23:00:05+00:00",
+      "summary": "はじめに プログラミング学習を始める際に、手頃な書籍を探すのは一つのハードルですよね。しかし、世界中の有志が協力して作り上げている「free-programming-books」というGitHubリポジトリを使えば、無料で入手できるプログラミングの電子書籍を簡単に見つけられます。 この記事では、そのfree-programming-booksリポジトリの概要・特徴・使い方・貢献方法などを詳しく解説します。 1. free-programming-booksとは？ 1.1 概要 free-programming-books は、プログラミングやコンピュータサイエンスに関する無料...",
+      "category": "その他",
+      "tags": []
+    },
+    {
+      "title": "GoでFTP操作を実現！「github.com/jlaffaye/ftp」を使ったサンプルコード解説",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/0df066fe4dd941",
+      "published_at": "2025-03-24T02:05:22+00:00",
+      "summary": "この記事では、Go言語でFTPサーバーに接続し、基本的な操作（接続・ログイン、ディレクトリ一覧の取得、ファイルのアップロード・ダウンロード）を行う方法を解説します。シンプルなサンプルコードを通して、主要な処理の実装方法を見ていきましょう。 1. 事前準備 まず、以下のコマンドでパッケージをインストールしてください。 go get github.com/jlaffaye/ftp 2. サンプルコード 以下のコードは、FTPサーバーへの接続からファイルのアップロード、ダウンロードまでを実装したサンプルです。 package main import ( \"fmt\" \"io\" \"...",
+      "category": "その他",
+      "tags": []
+    },
+    {
+      "title": "Go✖️React✖️TypeScript✖️TailwindCSSでTODOアプリ作ってみた",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/924010ca6c4b77",
+      "published_at": "2025-03-20T05:40:58+00:00",
+      "summary": "この記事では、GolangバックエンドとReactフロントエンド（TypeScript, TailwindCSS）を使ったシンプルなTODOアプリを紹介します。 Dockerで全コンポーネントが完結しており、SwaggerによるAPIドキュメント、Airによるホットリロードも実装。 リポジトリはGitHubに公開しているので、クローンするだけであなたの環境で動作させることができます！ はじめに https://github.com/urakawa-jinsei/todo-app リポジトリをクローンし、以下のコマンドを実行するだけで、すぐにアプリが動作します： docker-comp...",
+      "category": "その他",
+      "tags": []
+    }
+  ]
 }
