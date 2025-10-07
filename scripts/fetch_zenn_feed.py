@@ -8,6 +8,7 @@ import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 from html import unescape
 from pathlib import Path
 import re
@@ -46,9 +47,8 @@ def strip_html(text: str) -> str:
     return text.strip()
 
 
-def parse_feed(feed_bytes: bytes) -> list[dict]:
-    root = ET.fromstring(feed_bytes)
-    entries = root.findall(f"{ATOM_NS}entry")
+def parse_atom_feed(root: ET.Element) -> list[dict]:
+    entries = root.findall(f".//{ATOM_NS}entry")
 
     articles = []
     for entry in entries:
@@ -93,6 +93,72 @@ def parse_feed(feed_bytes: bytes) -> list[dict]:
         articles.append(article)
 
     return articles
+
+
+def parse_rss_feed(root: ET.Element) -> list[dict]:
+    channel = root.find("channel")
+    if channel is None:
+        return []
+
+    articles = []
+    for item in channel.findall("item"):
+        title = (item.findtext("title") or "").strip()
+        url = (item.findtext("link") or "").strip()
+
+        pub_date = (item.findtext("pubDate") or "").strip()
+        published_at = pub_date
+        if pub_date:
+            try:
+                parsed = parsedate_to_datetime(pub_date)
+            except (TypeError, ValueError):
+                parsed = None
+            if parsed is not None:
+                if parsed.tzinfo is None:
+                    parsed = parsed.replace(tzinfo=timezone.utc)
+                published_at = parsed.astimezone(timezone.utc).isoformat()
+
+        description = item.findtext("description") or ""
+        for child in item:
+            if child.tag.endswith("encoded") and child.text:
+                description = child.text
+                break
+        summary = strip_html(description)
+
+        categories = []
+        for category in item.findall("category"):
+            text = (category.text or "").strip()
+            if text:
+                categories.append(text)
+
+        if not title or not url:
+            continue
+
+        article = {
+            "title": title,
+            "url": url,
+            "published_at": published_at,
+            "summary": summary,
+            "category": categories[0] if categories else "その他",
+            "tags": categories,
+        }
+        articles.append(article)
+
+    return articles
+
+
+def parse_feed(feed_bytes: bytes) -> list[dict]:
+    root = ET.fromstring(feed_bytes)
+
+    if root.tag.endswith("feed"):
+        return parse_atom_feed(root)
+    if root.tag.endswith("rss"):
+        return parse_rss_feed(root)
+
+    # Fallback: attempt Atom parsing first, then RSS in case of namespaces.
+    articles = parse_atom_feed(root)
+    if articles:
+        return articles
+    return parse_rss_feed(root)
 
 
 def write_json(articles: list[dict]) -> None:
