@@ -150,8 +150,17 @@ function createArticleCard(article) {
   const card = document.createElement('article');
   card.className = 'article-card';
 
-  const content = document.createElement('div');
-  content.className = 'article-card-content';
+  const link = document.createElement('a');
+  link.href = article.url;
+  link.target = '_blank';
+  link.rel = 'noopener noreferrer';
+  link.className = 'card-link-wrapper';
+
+  const inner = document.createElement('div');
+  inner.className = 'card-inner';
+
+  const front = document.createElement('div');
+  front.className = 'card-face card-face--front';
 
   const meta = document.createElement('div');
   meta.className = 'card-meta';
@@ -174,10 +183,6 @@ function createArticleCard(article) {
   title.className = 'card-title';
   title.textContent = article.title;
 
-  const description = document.createElement('p');
-  description.className = 'card-description';
-  description.textContent = article.summary || '';
-
   const tags = document.createElement('div');
   tags.className = 'card-tags';
   (article.tags || []).forEach((tagText) => {
@@ -187,15 +192,35 @@ function createArticleCard(article) {
     tags.appendChild(tag);
   });
 
-  const link = document.createElement('a');
-  link.href = article.url;
-  link.target = '_blank';
-  link.rel = 'noopener noreferrer';
-  link.className = 'card-link';
-  link.innerHTML = `読む <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5H21m0 0v7.5m0-7.5L10.5 15 6 10.5 3 13.5" /></svg>`;
+  front.append(meta, title);
+  if (tags.childElementCount) {
+    front.appendChild(tags);
+  }
 
-  content.append(meta, title, description, tags, link);
-  card.appendChild(content);
+  const back = document.createElement('div');
+  back.className = 'card-face card-face--back';
+
+  const backTitle = document.createElement('h3');
+  backTitle.className = 'card-title card-title--back';
+  backTitle.textContent = article.title;
+
+  const description = document.createElement('p');
+  description.className = 'card-description';
+  description.textContent = article.summary || 'この記事の詳細はZennでご確認ください。';
+
+  const backBody = document.createElement('div');
+  backBody.className = 'card-back-body';
+  backBody.append(backTitle, description);
+
+  const cta = document.createElement('span');
+  cta.className = 'card-cta';
+  cta.textContent = 'クリックで記事を開く';
+
+  back.append(backBody, cta);
+
+  inner.append(front, back);
+  link.appendChild(inner);
+  card.appendChild(link);
   applyCardBackground(card, article.category);
   return card;
 }
@@ -209,7 +234,9 @@ function applyCardBackground(card, category) {
     ライフハック: 'linear-gradient(135deg, rgba(255, 180, 143, 0.2), rgba(93, 169, 233, 0.08))',
   };
 
-  card.style.backgroundImage = gradients[category] ?? 'linear-gradient(135deg, rgba(93, 169, 233, 0.1), rgba(42, 117, 187, 0.06))';
+  const gradient =
+    gradients[category] ?? 'linear-gradient(135deg, rgba(93, 169, 233, 0.1), rgba(42, 117, 187, 0.06))';
+  card.style.setProperty('--card-background', gradient);
 }
 
 function renderError(message) {
