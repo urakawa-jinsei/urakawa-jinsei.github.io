@@ -18,7 +18,7 @@ Zennで公開している記事をカードコレクション風に紹介するG
 
 ## 記事データの取得方法
 
-GitHub Actionsで1時間ごとにZennのRSSフィード（`https://zenn.dev/urakawa_jinsei/feed`）を取得し、変換したJSON（`assets/data/zenn-feed.json`）をコミットしています。フロントエンドはこのJSONファイルを読み込み、記事一覧を表示します。
+GitHub Actionsで1時間ごとにZennのRSSフィード（`https://zenn.dev/urakawa_jinsei/feed?all=1`）を取得し、変換したJSON（`assets/data/zenn-feed.json`）をコミットしています。フロントエンドはこのJSONファイルを読み込み、記事一覧を表示します。
 
 - ワークフローは `.github/workflows/update-zenn-feed.yml` に定義されており、必要に応じて手動実行（workflow_dispatch）も可能です。
 - 取得したJSONには最新記事と最終更新日時が含まれます。取得に失敗した場合はGitHub Actionsがエラーとなり、サイトではエラーメッセージが表示されます。
