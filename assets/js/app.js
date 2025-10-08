@@ -7,6 +7,10 @@ const state = {
     year: 'all',
     keyword: '',
   },
+  pagination: {
+    currentPage: 1,
+    itemsPerPage: 12,
+  },
 };
 
 const elements = {
@@ -15,6 +19,7 @@ const elements = {
   yearFilters: document.getElementById('yearFilters'),
   searchInput: document.getElementById('searchInput'),
   currentYear: document.getElementById('currentYear'),
+  pagination: document.getElementById('pagination'),
 };
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -32,6 +37,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   elements.searchInput.addEventListener('input', (event) => {
     state.filters.keyword = event.target.value.trim().toLowerCase();
+    state.pagination.currentPage = 1;
     renderArticles();
   });
 });
@@ -92,6 +98,7 @@ function renderFilterButtons(container, items, filterKey) {
     button.addEventListener('click', () => {
       state.filters[filterKey] = item;
       updateActiveButtons(container, item);
+      state.pagination.currentPage = 1;
       renderArticles();
     });
 
@@ -127,23 +134,36 @@ function renderArticles() {
         ? '現在表示できる記事がありません。しばらくしてから再度ご確認ください。'
         : '条件に合う記事が見つかりませんでした。フィルターを変更してみてください。';
     elements.articleGrid.innerHTML = `<p class="empty-message">${message}</p>`;
+    if (elements.pagination) {
+      elements.pagination.innerHTML = '';
+      elements.pagination.classList.add('is-hidden');
+    }
     return;
   }
 
-  const fragment = document.createDocumentFragment();
+  const sorted = [...filtered].sort((a, b) => {
+    const dateA = getPublishedDate(a)?.getTime() ?? 0;
+    const dateB = getPublishedDate(b)?.getTime() ?? 0;
+    return dateB - dateA;
+  });
 
-  filtered
-    .sort((a, b) => {
-      const dateA = getPublishedDate(a)?.getTime() ?? 0;
-      const dateB = getPublishedDate(b)?.getTime() ?? 0;
-      return dateB - dateA;
-    })
-    .forEach((article) => {
-      fragment.appendChild(createArticleCard(article));
-    });
+  const { itemsPerPage } = state.pagination;
+  const totalPages = Math.max(1, Math.ceil(sorted.length / itemsPerPage));
+  if (state.pagination.currentPage > totalPages) {
+    state.pagination.currentPage = totalPages;
+  }
+
+  const startIndex = (state.pagination.currentPage - 1) * itemsPerPage;
+  const paginated = sorted.slice(startIndex, startIndex + itemsPerPage);
+
+  const fragment = document.createDocumentFragment();
+  paginated.forEach((article) => {
+    fragment.appendChild(createArticleCard(article));
+  });
 
   elements.articleGrid.innerHTML = '';
   elements.articleGrid.appendChild(fragment);
+  renderPagination(totalPages);
 }
 
 function createArticleCard(article) {
@@ -241,6 +261,10 @@ function applyCardBackground(card, category) {
 
 function renderError(message) {
   elements.articleGrid.innerHTML = `<p class="empty-message">${message}</p>`;
+  if (elements.pagination) {
+    elements.pagination.innerHTML = '';
+    elements.pagination.classList.add('is-hidden');
+  }
 }
 
 function getPublishedDate(article) {
@@ -249,4 +273,81 @@ function getPublishedDate(article) {
   }
   const publishedDate = new Date(article.published_at);
   return Number.isNaN(publishedDate.getTime()) ? null : publishedDate;
+}
+
+function renderPagination(totalPages) {
+  if (!elements.pagination) {
+    return;
+  }
+
+  if (totalPages <= 1) {
+    elements.pagination.innerHTML = '';
+    elements.pagination.classList.add('is-hidden');
+    return;
+  }
+
+  elements.pagination.classList.remove('is-hidden');
+  elements.pagination.innerHTML = '';
+
+  const { currentPage } = state.pagination;
+
+  const goToPage = (page) => {
+    const nextPage = Math.min(Math.max(page, 1), totalPages);
+    if (nextPage === state.pagination.currentPage) {
+      return;
+    }
+    state.pagination.currentPage = nextPage;
+    renderArticles();
+  };
+
+  const prevButton = createPaginationButton('前へ', {
+    disabled: currentPage === 1,
+    ariaLabel: '前のページへ',
+    onClick: () => goToPage(currentPage - 1),
+  });
+  elements.pagination.appendChild(prevButton);
+
+  for (let page = 1; page <= totalPages; page += 1) {
+    const pageButton = createPaginationButton(String(page), {
+      isActive: page === currentPage,
+      ariaLabel: `${page}ページ目`,
+      onClick: () => goToPage(page),
+    });
+    elements.pagination.appendChild(pageButton);
+  }
+
+  const nextButton = createPaginationButton('次へ', {
+    disabled: currentPage === totalPages,
+    ariaLabel: '次のページへ',
+    onClick: () => goToPage(currentPage + 1),
+  });
+  elements.pagination.appendChild(nextButton);
+}
+
+function createPaginationButton(
+  label,
+  { onClick, disabled = false, isActive = false, ariaLabel } = {}
+) {
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'pagination__button';
+  button.textContent = label;
+
+  if (ariaLabel) {
+    button.setAttribute('aria-label', ariaLabel);
+  }
+
+  if (isActive) {
+    button.classList.add('is-active');
+    button.setAttribute('aria-current', 'page');
+  }
+
+  if (disabled) {
+    button.disabled = true;
+    button.setAttribute('aria-disabled', 'true');
+  } else if (typeof onClick === 'function') {
+    button.addEventListener('click', onClick);
+  }
+
+  return button;
 }

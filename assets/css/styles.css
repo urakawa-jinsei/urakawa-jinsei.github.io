@@ -242,6 +242,51 @@ a {
   align-items: stretch;
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 2.5rem auto 0;
+}
+
+.pagination.is-hidden {
+  display: none;
+}
+
+.pagination__button {
+  border: 1px solid rgba(29, 29, 31, 0.16);
+  background: #fff;
+  color: var(--text-main);
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 2.5rem;
+}
+
+.pagination__button:hover,
+.pagination__button:focus {
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
+}
+
+.pagination__button.is-active {
+  background: var(--accent-blue);
+  border-color: var(--accent-blue);
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(42, 117, 187, 0.2);
+  cursor: default;
+}
+
+.pagination__button[disabled],
+.pagination__button[aria-disabled='true'] {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
 .article-card {
   perspective: 1600px;
   position: relative;

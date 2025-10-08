@@ -14,7 +14,7 @@ from pathlib import Path
 import re
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-FEED_URL = "https://zenn.dev/urakawa_jinsei/feed"
+FEED_URL = "http://zenn.dev/urakawa_jinsei/feed?all=1"
 PROXY_URL = f"https://r.jina.ai/{FEED_URL}"
 OUTPUT_PATH = REPO_ROOT / "assets" / "data" / "zenn-feed.json"
 ATOM_NS = "{http://www.w3.org/2005/Atom}"
