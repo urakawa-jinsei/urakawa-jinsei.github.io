@@ -8,14 +8,19 @@ Zennで公開している記事をカードコレクション風に紹介するG
 
 ```
 .
-├── index.html          # トップページ
+├── index.html                # トップページ
 ├── assets
 │   ├── css
-│   │   └── styles.css  # レイアウトとテーマのスタイル
+│   │   └── styles.css        # レイアウトとテーマのスタイル
 │   ├── data
-│   │   └── zenn-feed.json  # GitHub Actionsで生成される記事データ
+│   │   └── zenn-feed.json    # GitHub Actionsで生成される記事データ
 │   └── js
-│       └── app.js      # フィルター・検索などのインタラクション
+│       └── app.js            # フィルター・検索などのインタラクション
+├── scripts
+│   └── fetch_zenn_feed.py    # RSSをJSONに変換するスクリプト
+└── .github
+    └── workflows
+        └── update-zenn-feed.yml  # 記事データを更新するGitHub Actions
 ```
 
 ## 記事データの取得方法
