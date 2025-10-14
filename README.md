@@ -1,5 +1,7 @@
 # 浦川 仁成 記事図鑑
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/urakawa-jinsei/urakawa-jinsei.github.io)
+
 Zennで公開している記事をカードコレクション風に紹介するGitHub Pagesサイトです。
 
 ## プロジェクト構成
