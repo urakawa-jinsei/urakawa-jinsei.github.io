@@ -1,5 +1,7 @@
 # 浦川 仁成 記事図鑑
 
+[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?logo=github&logoColor=white)](https://urakawa-jinsei.github.io/)
+[![RSS](https://img.shields.io/badge/RSS_Feed-FFA500?logo=rss&logoColor=white)](https://zenn.dev/urakawa_jinsei/feed?all=1)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/urakawa-jinsei/urakawa-jinsei.github.io)
 
 Zennで公開している記事をカードコレクション風に紹介するGitHub Pagesサイトです。
