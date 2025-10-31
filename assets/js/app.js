@@ -20,9 +20,11 @@ const elements = {
   searchInput: document.getElementById('searchInput'),
   currentYear: document.getElementById('currentYear'),
   pagination: document.getElementById('pagination'),
+  themeToggle: document.getElementById('themeToggle'),
 };
 
 document.addEventListener('DOMContentLoaded', async () => {
+  initTheme();
   elements.currentYear.textContent = new Date().getFullYear();
 
   try {
@@ -40,7 +42,42 @@ document.addEventListener('DOMContentLoaded', async () => {
     state.pagination.currentPage = 1;
     renderArticles();
   });
+
+  elements.themeToggle.addEventListener('change', (event) => {
+    setTheme(event.target.checked ? 'dark' : 'light');
+  });
 });
+
+function initTheme() {
+  const savedTheme = localStorage.getItem('theme');
+  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  if (savedTheme) {
+    setTheme(savedTheme);
+  } else {
+    setTheme(systemPrefersDark ? 'dark' : 'light');
+  }
+
+  // Listen for changes in system preference
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    // Only change if no theme is manually set
+    if (!localStorage.getItem('theme')) {
+      setTheme(e.matches ? 'dark' : 'light');
+    }
+  });
+}
+
+function setTheme(theme) {
+  if (theme === 'dark') {
+    document.body.classList.add('dark-mode');
+    elements.themeToggle.checked = true;
+    localStorage.setItem('theme', 'dark');
+  } else {
+    document.body.classList.remove('dark-mode');
+    elements.themeToggle.checked = false;
+    localStorage.setItem('theme', 'light');
+  }
+}
 
 async function loadArticles() {
   const response = await fetch(FEED_JSON_URL, {
