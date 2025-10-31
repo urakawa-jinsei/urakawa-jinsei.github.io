@@ -1,9 +1,10 @@
 {
-  "last_updated": "2025-10-31T01:54:09.511287+00:00",
+  "last_updated": "2025-10-31T02:29:09.581132+00:00",
   "articles": [
     {
       "title": "PostgreSQLのパフォーマンスチューニング入門: インデックスの威力を体感せよ",
       "url": "https://zenn.dev/urakawa_jinsei/articles/e20e1f76f5109f",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--7jyWJAaQ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:PostgreSQL%25E3%2581%25AE%25E3%2583%2591%25E3%2583%2595%25E3%2582%25A9%25E3%2583%25BC%25E3%2583%259E%25E3%2583%25B3%25E3%2582%25B9%25E3%2583%2581%25E3%2583%25A5%25E3%2583%25BC%25E3%2583%258B%25E3%2583%25B3%25E3%2582%25B0%25E5%2585%25A5%25E9%2596%2580%253A%2520%25E3%2582%25A4%25E3%2583%25B3%25E3%2583%2587%25E3%2583%2583%25E3%2582%25AF%25E3%2582%25B9%25E3%2581%25AE%25E5%25A8%2581%25E5%258A%259B%25E3%2582%2592%25E4%25BD%2593%25E6%2584%259F%25E3%2581%259B%25E3%2582%2588%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2025-09-09T23:00:06+00:00",
       "summary": "はじめに データベースのパフォーマンスチューニングって難しそう…と思っていませんか？ 今回は、シーケンシャルスキャン（Seq Scan）になっているクエリをインデックススキャン（Index Scan）に変えることで、クエリを劇的に高速化する手順を実測値つきでまとめます。 途中で実行計画の読み方やParallel Seq Scan / Gatherのポイントも押さえます。 EXPLAIN ANALYZE は計測オーバーヘッドが乗るので、素の実行より遅くなることがあります。数値は目安として見てください。(PostgreSQL) 環境構築（Docker） docker-comp...",
       "category": "その他",
@@ -12,6 +13,7 @@
     {
       "title": "【Go】コードの読み方を学ぶ - strings.Joinを題材に",
       "url": "https://zenn.dev/urakawa_jinsei/articles/8706c1ccb50c97",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--J9o9d_E---/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Go%25E3%2580%2591%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2581%25AE%25E8%25AA%25AD%25E3%2581%25BF%25E6%2596%25B9%25E3%2582%2592%25E5%25AD%25A6%25E3%2581%25B6%2520-%2520strings.Join%25E3%2582%2592%25E9%25A1%258C%25E6%259D%2590%25E3%2581%25AB%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2025-08-26T23:00:01+00:00",
       "summary": "はじめに Go の標準ライブラリには、効率や安全性に配慮された設計が随所に見られます。 今回は、その中でもよく使われる strings.Join を題材に、「コードをどう読み解けばよいか」を順に見ていきます。 背景・目的 例えば、このようなコードがあります。 // Join concatenates the elements of its first argument to create a single string. // The separator string sep is placed between elements in the resulting string. ...",
       "category": "その他",
@@ -20,6 +22,7 @@
     {
       "title": "Makefile入門｜Goで学ぶ、はじめてのMakefile",
       "url": "https://zenn.dev/urakawa_jinsei/articles/a21e93692ca715",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--CZwbMilt--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Makefile%25E5%2585%25A5%25E9%2596%2580%25EF%25BD%259CGo%25E3%2581%25A7%25E5%25AD%25A6%25E3%2581%25B6%25E3%2580%2581%25E3%2581%25AF%25E3%2581%2598%25E3%2582%2581%25E3%2581%25A6%25E3%2581%25AEMakefile%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2025-08-19T23:00:06+00:00",
       "summary": "はじめに Goでプログラムを書いていると、 go build go run go test …など、毎回同じコマンドを入力するのが面倒になることありませんか？ そんなときに便利なのが Makefile です。 公式ドキュメントでは「依存関係に応じて必要な処理だけを実行するツール」と説明されていますが、Goプロジェクトに限って言えば 「よく使うコマンドをまとめておける便利な仕組み」 と考えるとわかりやすいです。 最小のMakefileを書いてみる まずはGoで「Hello, World」を出力するプログラムを作りましょう。 main.go package main impo...",
       "category": "その他",
@@ -28,6 +31,7 @@
     {
       "title": "【Go】複数のCloud Run Jobsをモノレポで管理する",
       "url": "https://zenn.dev/urakawa_jinsei/articles/07da4bf827c73a",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--0KCmJSJs--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Go%25E3%2580%2591%25E8%25A4%2587%25E6%2595%25B0%25E3%2581%25AECloud%2520Run%2520Jobs%25E3%2582%2592%25E3%2583%25A2%25E3%2583%258E%25E3%2583%25AC%25E3%2583%259D%25E3%2581%25A7%25E7%25AE%25A1%25E7%2590%2586%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2025-08-07T23:00:01+00:00",
       "summary": "はじめに 本記事のゴール モノレポ構成でJobごとのディレクトリを整理 Dockerマルチステージビルドでバイナリを効率的に生成 Cloud Buildのループ処理でCI/CDを自動化 ディレクトリ構成 ディレクトリ構成 . ├── cloudbuild.yaml ├── cmd │ ├── cloud-run-jobs1 │ │ ├── Dockerfile │ │ └── main.go │ ├── cloud-run-jobs2 │ │ ├── Dockerfile │ │ └── main.go │ └── cloud...",
       "category": "その他",
@@ -36,6 +40,7 @@
     {
       "title": "【Go】sqlcでbulk insertをする方法",
       "url": "https://zenn.dev/urakawa_jinsei/articles/065cc07cc1ad05",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--sat62sjR--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Go%25E3%2580%2591sqlc%25E3%2581%25A7bulk%2520insert%25E3%2582%2592%25E3%2581%2599%25E3%2582%258B%25E6%2596%25B9%25E6%25B3%2595%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2025-08-06T23:00:01+00:00",
       "summary": "はじめに 大量データを一括で挿入したい場面は多いのではないでしょうか？ 例えばバッチ処理で数百万件のデータを扱うとき、通常のINSERT文を1件ずつ実行すると、ネットワーク往復やトランザクションオーバーヘッドで処理時間が膨大になります。 PostgreSQLが提供するCOPYプロトコルを利用したbulk insert（まとめて挿入）を使うことで、シーケンシャルなINSERTと比べて数十倍〜数百倍の高速化が可能です。 Go向けORMツールのsqlcでは、コメントに:copyfromを付与するだけでこのCOPYプロトコルを簡単に利用できます。[1] 結論 SQLファイルのコメントに:...",
       "category": "その他",
@@ -44,6 +49,7 @@
     {
       "title": "gcloud storage cpで発生する storage.objects.get No such object エラーの真相",
       "url": "https://zenn.dev/urakawa_jinsei/articles/059d54948e3da8",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--P3RPHk2B--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:gcloud%2520storage%2520cp%25E3%2581%25A7%25E7%2599%25BA%25E7%2594%259F%25E3%2581%2599%25E3%2582%258B%2520storage.objects.get%2520No%2520such%2520object...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2025-07-07T23:00:01+00:00",
       "summary": "はじめに Cloud Storageへのファイルアップロードのために、gcloud storage cpコマンドを使用すると、Cloud Loggingに、storage.objects.get No such objectというエラーが出力されます。 ファイルアップロードのコマンドをgsutil cpコマンドに変更すると、上記のエラーは出なくなります。 なぜでしょうか？ gcloud storage cpコマンドとgsutil cpコマンドの違いを調べてみました。 Cloud Logging 原因 gcloud storage cpは、パフォーマンス向上のために並列・分割アッ...",
       "category": "その他",
@@ -52,6 +58,7 @@
     {
       "title": "【Go】pq: database \"xxx\" does not existにハマった話",
       "url": "https://zenn.dev/urakawa_jinsei/articles/0554c12d5a27d2",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--Xrbnul7m--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Go%25E3%2580%2591pq%253A%2520database%2520%2522xxx%2522%2520does%2520not%2520exist%25E3%2581%25AB%25E3%2583%258F%25E3%2583%259E%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2025-06-16T23:00:02+00:00",
       "summary": "はじめに Cloud Run Jobsから、Cloud SQLへの接続確認をしていました。 正しいデータベースを指定しているはずでしたが、何度やっても、以下のエラーが発生します。 pq: database \"xxx\" does not exist なぜでしょうか？ 原因 データベース名の末尾に、空白が入っていたことが原因でした。 同じ経験をしたことがある人も多いのではないでしょうか？ 解決 デフォルトのデータベース（postgres）には接続できたので、データベース名の一覧を出力し、データベース名と、接続したいデータベース名が合っているか、それぞれのデータベース名の文字数を出...",
       "category": "その他",
@@ -60,6 +67,7 @@
     {
       "title": "MCPを体験するだけ",
       "url": "https://zenn.dev/urakawa_jinsei/articles/b31ef87d0c6a76",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--8iWMptwZ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:MCP%25E3%2582%2592%25E4%25BD%2593%25E9%25A8%2593%25E3%2581%2599%25E3%2582%258B%25E3%2581%25A0%25E3%2581%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2025-06-15T23:00:01+00:00",
       "summary": "はじめに この記事は、MCPって何？という方が、初めの一歩を踏み出してみるための記事です。 公式のチュートリアルに従って、ファイルシステムMCPサーバーを体験します。 1. Claude for Desktopをインストール https://claude.ai/downloadで、Claude for Desktopをダウンロードして、インストールします。 2. ファイルシステムMCPサーバーを追加する まず、コンピュータでClaudeメニューを開き、「設定...」を選択します。これらは、アプリウィンドウ自体にある、アカウント設定ではないことに注意して下さい。 Macでは、次...",
       "category": "その他",
@@ -68,6 +76,7 @@
     {
       "title": "Cloud Run JobsのエラーをSlackに通知する",
       "url": "https://zenn.dev/urakawa_jinsei/articles/db5be14145cc44",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--ZmZbeuiy--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Cloud%2520Run%2520Jobs%25E3%2581%25AE%25E3%2582%25A8%25E3%2583%25A9%25E3%2583%25BC%25E3%2582%2592Slack%25E3%2581%25AB%25E9%2580%259A%25E7%259F%25A5%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2025-05-27T23:00:01+00:00",
       "summary": "1. Slack 通知チャネルを準備する GCP コンソール → Notification channels を開く Slack セクションで Add new をクリックし、ワークスペースとチャンネルを認可・登録する 2. Logs Explorer でクエリを作成 GCP コンソール → Logs Explorer を開く クエリ欄に以下を入力し、Run で結果を確認 resource.type=\"cloud_run_job\" severity=\"ERROR\" ( resource.labels.job_name=\"your-cloud-run-jobs-...",
       "category": "その他",
@@ -76,6 +85,7 @@
     {
       "title": "【Go】pq: password authentication failed for user \"xxx\" にハマった話",
       "url": "https://zenn.dev/urakawa_jinsei/articles/0b4031176ff47e",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--YMLjsHNs--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Go%25E3%2580%2591pq%253A%2520password%2520authentication%2520failed%2520for%2520user%2520%2522xxx%2522%2520%25E3%2581%25AB%25E3%2583%258F%25E3%2583%259E%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2025-05-26T23:00:01+00:00",
       "summary": "はじめに Private IPを持ったCloud SQLに、Cloud Run Jobsから、Direct VPC Egressで接続しようとしていました。 しかし、接続がうまくいきません。 ユーザー名やパスワードはあっているはずなのに、以下のエラーが発生しました。 pq: password authentication failed for user \"xxx\" なぜでしょうか？ 修正前のコード 以下を参考に、TCPで接続する方法を選択しました。 https://cloud.google.com/sql/docs/postgres/connect-run?hl=ja#priva...",
       "category": "その他",
@@ -84,6 +94,7 @@
     {
       "title": "これで完璧！Goの演算子と区切り記号を網羅するまとめ",
       "url": "https://zenn.dev/urakawa_jinsei/articles/20892e7813b782",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--IWXnyY1e--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%2593%25E3%2582%258C%25E3%2581%25A7%25E5%25AE%258C%25E7%2592%25A7%25EF%25BC%2581Go%25E3%2581%25AE%25E6%25BC%2594%25E7%25AE%2597%25E5%25AD%2590%25E3%2581%25A8%25E5%258C%25BA%25E5%2588%2587%25E3%2582%258A%25E8%25A8%2598%25E5%258F%25B7%25E3%2582%2592%25E7%25B6%25B2%25E7%25BE%2585%25E3%2581%2599%25E3%2582%258B%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2025-05-07T23:00:06+00:00",
       "summary": "はじめに Go 言語仕様では、演算子や句読点（トークン）があらかじめ定義され、プログラム中で特別な意味を持ちます。 知らない演算子がたくさんあったので、この機会にまとめてみました。 http://go.dev/ref/spec#Operators_and_punctuation 一覧表 トークン 説明 使用例 + 加算／正符号 sum := a + b - 減算／負符号 diff := a - b * 乗算／ポインタ参照 prod := a * b / 除算 quot := a / b % 剰余 rem := a % b << 左シフ...",
       "category": "その他",
@@ -92,6 +103,7 @@
     {
       "title": "知らないとヤバい！Go言語25の予約語まとめ＆使用例",
       "url": "https://zenn.dev/urakawa_jinsei/articles/facf886c446dfb",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--4_U7yq50--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%259F%25A5%25E3%2582%2589%25E3%2581%25AA%25E3%2581%2584%25E3%2581%25A8%25E3%2583%25A4%25E3%2583%2590%25E3%2581%2584%25EF%25BC%2581Go%25E8%25A8%2580%25E8%25AA%259E25%25E3%2581%25AE%25E4%25BA%2588%25E7%25B4%2584%25E8%25AA%259E%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%25EF%25BC%2586%25E4%25BD%25BF%25E7%2594%25A8%25E4%25BE%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2025-05-01T23:00:01+00:00",
       "summary": "はじめに Go 言語仕様で予約されているキーワード25個の一覧と、それぞれの説明および使用例を紹介します。 gotoやfallthroughなどは知らなかったので、良い機会になりました。 以下の語は Go 言語があらかじめ予約しているキーワードなので、変数名や関数名など自分で名前を付ける識別子には使えません。 https://go.dev/ref/spec#Keywords 一覧表 キーワード 説明 使用例 break ループ (for) や switch から抜ける for i := 0; i < 10; i++ { if i == 5 { break } ...",
       "category": "その他",
@@ -100,6 +112,7 @@
     {
       "title": "「誰でも爆速で理解できる！Go のルーンリテラル10個のエスケープシーケンスまとめ」",
       "url": "https://zenn.dev/urakawa_jinsei/articles/5a6fbfeea9213b",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--s8BZnzv4--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258C%25E8%25AA%25B0%25E3%2581%25A7%25E3%2582%2582%25E7%2588%2586%25E9%2580%259F%25E3%2581%25A7%25E7%2590%2586%25E8%25A7%25A3%25E3%2581%25A7%25E3%2581%258D%25E3%2582%258B%25EF%25BC%2581Go%2520%25E3%2581%25AE%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%25B3%25E3%2583%25AA%25E3%2583%2586%25E3%2583%25A9%25E3%2583%25AB10%25E5%2580%258B%25E3%2581%25AE%25E3%2582%25A8%25E3%2582%25B9%25E3%2582%25B1%25E3%2583%25BC%25E3%2583%2597%25E3%2582%25B7%25E3%2583%25BC%25E3%2582%25B1%25E3%2583%25B3%25E3%2582%25B9%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%25E3%2580%258D%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2025-04-23T23:00:01+00:00",
       "summary": "はじめに Go 言語では、単一の Unicode コードポイントを表す整数定数を ルーンリテラル（rune literal）として扱います。ルーンリテラルはシングルクォートで囲まれた 1 文字またはエスケープシーケンスで記述し、内部的には int32（別名 rune）型として扱われます。 本記事では、公式仕様書「Rune literals」に基づき、代表的なエスケープシーケンスの一覧と、それらを使った出力例を紹介します。 一覧表 以下の表は、Go のルーンリテラルおよび文字列リテラルで利用できる主要なエスケープシーケンスをまとめたものです。各行には対応する Unicode コード...",
       "category": "その他",
@@ -108,6 +121,7 @@
     {
       "title": "Goが好きです。",
       "url": "https://zenn.dev/urakawa_jinsei/articles/6a4444d78c1300",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--7JU3z4JR--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Go%25E3%2581%258C%25E5%25A5%25BD%25E3%2581%258D%25E3%2581%25A7%25E3%2581%2599%25E3%2580%2582%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2025-04-16T23:00:01+00:00",
       "summary": "はじめに 私は、業務で2年ほどGoを書いています。 私が個人的にGoについて気に入っている点を13個紹介したいと思います。 他の言語との違いや、具体的なソースコード、コマンドも提供していますので、ぜひ試してみてください。 ! 他の言語との違いを説明していますが、他の言語を貶しているわけではないので、あらかじめご了承ください。 Goとは？ https://en.wikipedia.org/wiki/Go_(programming_language) Go言語は、2007年ごろにGoogleのエンジニア（Robert Griesemer、Rob Pike、Ken Thompson）...",
       "category": "その他",
@@ -116,6 +130,7 @@
     {
       "title": "Docker Model Runnerで実現する簡単生成AIアプリケーション ～Hello GenAI実践レポート～",
       "url": "https://zenn.dev/urakawa_jinsei/articles/7ce3ba360fd5e1",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--IE5ILZgU--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Docker%2520Model%2520Runner%25E3%2581%25A7%25E5%25AE%259F%25E7%258F%25BE%25E3%2581%2599%25E3%2582%258B%25E7%25B0%25A1%25E5%258D%2598%25E7%2594%259F%25E6%2588%2590AI%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%25B1%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%2520%25EF%25BD%259EHello%2520GenAI%25E5%25AE%259F%25E8%25B7%25B5%25E3%2583%25AC%25E3%2583%259D%25E3%2583%25BC%25E3%2583%2588%25EF%25BD%259E%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2025-04-08T00:33:50+00:00",
       "summary": "Docker Model Runnerとは https://docs.docker.com/desktop/features/model-runner/ Docker Model Runner は、Docker Desktop に組み込まれた機能で、AIモデルを Docker Hub からプルし、ローカルで直接実行できるプラグインです。 この機能を使うことで、初回実行時に大容量のモデルがダウンロードされ、以降はローカルキャッシュから迅速にモデルが読み込まれます。また、OpenAI互換のAPIを介してモデルに対するプロンプト送信やチャット形式での対話が可能となり、開発者は自分のアプリケ...",
       "category": "その他",
@@ -124,6 +139,7 @@
     {
       "title": "Goの進化に乗り遅れるな！modernizeパッケージでコードを現代化するリファクタリング入門",
       "url": "https://zenn.dev/urakawa_jinsei/articles/3efa94ac6d16e7",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--1Kt9Qt-S--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Go%25E3%2581%25AE%25E9%2580%25B2%25E5%258C%2596%25E3%2581%25AB%25E4%25B9%2597%25E3%2582%258A%25E9%2581%2585%25E3%2582%258C%25E3%2582%258B%25E3%2581%25AA%25EF%25BC%2581modernize%25E3%2583%2591%25E3%2583%2583%25E3%2582%25B1%25E3%2583%25BC%25E3%2582%25B8%25E3%2581%25A7%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592%25E7%258F%25BE%25E4%25BB%25A3%25E5%258C%2596%25E3%2581%2599%25E3%2582%258B%25E3%2583%25AA%25E3%2583%2595%25E3%2582%25A1%25E3%2582%25AF%25E3%2582%25BF%25E3%2583%25AA%25E3%2583%25B3%25E3%2582%25B0%25E5%2585%25A5%25E9%2596%2580%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2025-04-02T23:00:01+00:00",
       "summary": "「modernize」パッケージとは？ https://pkg.go.dev/golang.org/x/tools/gopls/internal/analysis/modernize 「modernize」パッケージは、Go のツール群の中でも特に注目すべき解析器（アナライザー）です。gopls（Go 言語サーバー）に統合されており、既存のコードを最新の言語機能や標準ライブラリの改善点に沿って自動的にリファクタリングするための提案を行ってくれます。たとえば、古い if/else 構文による条件分岐を、Go 1.21 で追加された組み込みの min/max 関数に置き換えるなど、コード...",
       "category": "その他",
@@ -132,6 +148,7 @@
     {
       "title": "Goでファイル操作ばかりしてる俺が語る！爆速7フォーマット実践サンプル【JSON/YAML/CSV/txt/Excel/ini/XML】",
       "url": "https://zenn.dev/urakawa_jinsei/articles/da7ff21f360186",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--_DC3Wyzp--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Go%25E3%2581%25A7%25E3%2583%2595%25E3%2582%25A1%25E3%2582%25A4%25E3%2583%25AB%25E6%2593%258D%25E4%25BD%259C%25E3%2581%25B0%25E3%2581%258B%25E3%2582%258A%25E3%2581%2597%25E3%2581%25A6%25E3%2582%258B%25E4%25BF%25BA%25E3%2581%258C%25E8%25AA%259E%25E3%2582%258B%25EF%25BC%2581%25E7%2588%2586%25E9%2580%259F7%25E3%2583%2595%25E3%2582%25A9%25E3%2583%25BC%25E3%2583%259E%25E3%2583%2583%25E3%2583%2588%25E5%25AE%259F%25E8%25B7%25B5%25E3%2582%25B5%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AB%25E3%2580%2590JSON%252FYAML%252FCSV%252Ftxt%252FExc...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2025-03-31T01:37:11+00:00",
       "summary": "はじめに 現在の部署に入ってから、Goでのファイル操作ばかりを行なっているので、この記事では、Goでの色々なファイルの読み書きについて説明します。 JSON https://pkg.go.dev/encoding/json inputファイル input.json { \"name\": \"John\", \"age\": 30 } 読み込みサンプルコード main.go package main import ( \"encoding/json\" // JSONエンコード/デコード用パッケージ \"fmt\" // フォーマット済み入出力...",
       "category": "その他",
@@ -140,6 +157,7 @@
     {
       "title": "【無料で本が読める】GitHubリポジトリ「free-programming-books」",
       "url": "https://zenn.dev/urakawa_jinsei/articles/b92b25b31defe2",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--_osvTpH5--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590%25E7%2584%25A1%25E6%2596%2599%25E3%2581%25A7%25E6%259C%25AC%25E3%2581%258C%25E8%25AA%25AD%25E3%2582%2581%25E3%2582%258B%25E3%2580%2591GitHub%25E3%2583%25AA%25E3%2583%259D%25E3%2582%25B8%25E3%2583%2588%25E3%2583%25AA%25E3%2580%258Cfree-programming-books%25E3%2580%258D%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2025-03-25T23:00:05+00:00",
       "summary": "はじめに プログラミング学習を始める際に、手頃な書籍を探すのは一つのハードルですよね。しかし、世界中の有志が協力して作り上げている「free-programming-books」というGitHubリポジトリを使えば、無料で入手できるプログラミングの電子書籍を簡単に見つけられます。 この記事では、そのfree-programming-booksリポジトリの概要・特徴・使い方・貢献方法などを詳しく解説します。 1. free-programming-booksとは？ 1.1 概要 free-programming-books は、プログラミングやコンピュータサイエンスに関する無料...",
       "category": "その他",
@@ -148,6 +166,7 @@
     {
       "title": "GoでFTP操作を実現！「github.com/jlaffaye/ftp」を使ったサンプルコード解説",
       "url": "https://zenn.dev/urakawa_jinsei/articles/0df066fe4dd941",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--3O0x30hI--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Go%25E3%2581%25A7FTP%25E6%2593%258D%25E4%25BD%259C%25E3%2582%2592%25E5%25AE%259F%25E7%258F%25BE%25EF%25BC%2581%25E3%2580%258Cgithub.com%252Fjlaffaye%252Fftp%25E3%2580%258D%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%259F%25E3%2582%25B5%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AB%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E8%25A7%25A3%25E8%25AA%25AC%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2025-03-24T02:05:22+00:00",
       "summary": "この記事では、Go言語でFTPサーバーに接続し、基本的な操作（接続・ログイン、ディレクトリ一覧の取得、ファイルのアップロード・ダウンロード）を行う方法を解説します。シンプルなサンプルコードを通して、主要な処理の実装方法を見ていきましょう。 1. 事前準備 まず、以下のコマンドでパッケージをインストールしてください。 go get github.com/jlaffaye/ftp 2. サンプルコード 以下のコードは、FTPサーバーへの接続からファイルのアップロード、ダウンロードまでを実装したサンプルです。 package main import ( \"fmt\" \"io\" \"...",
       "category": "その他",
@@ -156,6 +175,7 @@
     {
       "title": "Go✖️React✖️TypeScript✖️TailwindCSSでTODOアプリ作ってみた",
       "url": "https://zenn.dev/urakawa_jinsei/articles/924010ca6c4b77",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--vLhzmpgm--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Go%2520React%2520TypeScript%2520TailwindCSS%25E3%2581%25A7TODO%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2025-03-20T05:40:58+00:00",
       "summary": "この記事では、GolangバックエンドとReactフロントエンド（TypeScript, TailwindCSS）を使ったシンプルなTODOアプリを紹介します。 Dockerで全コンポーネントが完結しており、SwaggerによるAPIドキュメント、Airによるホットリロードも実装。 リポジトリはGitHubに公開しているので、クローンするだけであなたの環境で動作させることができます！ はじめに https://github.com/urakawa-jinsei/todo-app リポジトリをクローンし、以下のコマンドを実行するだけで、すぐにアプリが動作します： docker-comp...",
       "category": "その他",
@@ -164,6 +184,7 @@
     {
       "title": "【Goハンズオン】シンプルなWebアプリケーションを作ってみよう",
       "url": "https://zenn.dev/urakawa_jinsei/articles/0f162fb8dee08c",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--uP267lHq--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Go%25E3%2583%258F%25E3%2583%25B3%25E3%2582%25BA%25E3%2582%25AA%25E3%2583%25B3%25E3%2580%2591%25E3%2582%25B7%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AB%25E3%2581%25AAWeb%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%25B1%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%2588%25E3%2581%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2025-02-24T22:00:02+00:00",
       "summary": "この記事では、Go言語を用いてシンプルなWebアプリケーションを構築する方法をステップバイステップで解説します。 公式チュートリアルをベースにしているため、Goの基本的なWebサーバーやテンプレート、ファイル入出力の扱い方を学ぶことができます。 1. はじめに 今回作成するWebアプリケーションは、以下の機能を持っています。 ページの閲覧 ページの編集 ページの保存 ユーザーはURLにページ名を指定することで、既存ページを閲覧または編集でき、編集結果はテキストファイルとして保存されます。 2. 開発環境の準備 Goのインストール 最新版のGoがインストールされていることを...",
       "category": "その他",
@@ -172,6 +193,7 @@
     {
       "title": "【Go】fmt.Printfのフォーマット指定子まとめ＆チートシート",
       "url": "https://zenn.dev/urakawa_jinsei/articles/68ddb97b61fd07",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--n_-vtLzt--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Go%25E3%2580%2591fmt.Printf%25E3%2581%25AE%25E3%2583%2595%25E3%2582%25A9%25E3%2583%25BC%25E3%2583%259E%25E3%2583%2583%25E3%2583%2588%25E6%258C%2587%25E5%25AE%259A%25E5%25AD%2590%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%25EF%25BC%2586%25E3%2583%2581%25E3%2583%25BC%25E3%2583%2588%25E3%2582%25B7%25E3%2583%25BC%25E3%2583%2588%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2025-02-04T23:00:01+00:00",
       "summary": "はじめに Go言語でフォーマット付き出力を行う際に欠かせないのがfmt.Printfです。 しかし、使えるフォーマット指定子（バーブ）の種類が多く、どれを使えばいいのか迷うこともありますよね？ 本記事では、fmt.Printfで使えるすべてのフォーマット指定子を説明＋サンプルコード付きで分かりやすく解説します！ さらに、すぐに使えるチートシートも用意しているので、ぜひ参考にしてください 💡 各バーブの説明とサンプルコード 一般的なバーブ バーブ 説明 %v デフォルトのフォーマットで値を表示 %+v 構造体のフィールド名を含めて表示 %#v Go の構...",
       "category": "その他",
@@ -180,6 +202,7 @@
     {
       "title": "非公式のHTTPステータスコードまとめ",
       "url": "https://zenn.dev/urakawa_jinsei/articles/a93fb6c35b7173",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--sY-aiMFd--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E9%259D%259E%25E5%2585%25AC%25E5%25BC%258F%25E3%2581%25AEHTTP%25E3%2582%25B9%25E3%2583%2586%25E3%2583%25BC%25E3%2582%25BF%25E3%2582%25B9%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2024-12-16T22:00:01+00:00",
       "summary": "TRIAL＆RetailAI Advent Calendar 2024 17日目の投稿です。 https://qiita.com/advent-calendar/2024/retail-ai はじめに 役に立つのかは分かりませんが、どの規格にも規定されていない、非公式のステータスコードを紹介します。 チートシート ステータスコード メッセージ 発行元 説明 218 This is fine Apache HTTP Server サーバーの ProxyErrorOverride 設定が有効な際に、エラーメッセージの代わりに使用される 419 Page Expire...",
       "category": "その他",
@@ -188,6 +211,7 @@
     {
       "title": ".yamlと.ymlは何が違うの？",
       "url": "https://zenn.dev/urakawa_jinsei/articles/a334914f774c85",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--7vbTpUrQ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:.yaml%25E3%2581%25A8.yml%25E3%2581%25AF%25E4%25BD%2595%25E3%2581%258C%25E9%2581%2595%25E3%2581%2586%25E3%2581%25AE%25EF%25BC%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2024-12-03T23:00:05+00:00",
       "summary": "はじめに プログラミングや設定管理の世界で、YAML形式のファイルを扱う際に .yaml と .yml の2つの拡張子に出会うことがあります。一見、同じように見えるこれらの拡張子について、解説していきます。 拡張子の本質的な同一性 技術的な互換性 まず、最も重要なポイントは、.yaml と .yml が完全に同一の内容と構造を持つファイルを表しているということです。どちらの拡張子を使用しても、YAMLパーサーは全く同じようにファイルを読み取り、解析します。 内部構造の同一性 # .yml でも .yaml でも、この設定は全く同じように解釈されます database: ...",
       "category": "その他",
@@ -196,6 +220,7 @@
     {
       "title": "Testcontainers使ってみた",
       "url": "https://zenn.dev/urakawa_jinsei/articles/a242ddf18050e7",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--vMqjxXPC--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Testcontainers%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2024-11-11T22:00:01+00:00",
       "summary": "Testcontainersとは https://testcontainers.com/ Testcontainersは、データベース、メッセージ・ブローカー、ウェブ・ブラウザなど、Dockerコンテナで動作するあらゆるものの軽量インスタンスを提供するためのオープンソース・ライブラリです。 テストの依存関係をコードとして定義し、テストを実行するだけで、コンテナが作成され、削除されます。 モックや複雑な環境設定はもう必要ありません。 多くの言語とテストフレームワークをサポートしており、必要なのはDockerだけです。 背景 2023年12月、Docker社がTestcontaine...",
       "category": "その他",
@@ -204,6 +229,7 @@
     {
       "title": "sqlcでトランザクションのロールバックエラーを適切に処理する方法",
       "url": "https://zenn.dev/urakawa_jinsei/articles/af6dd7a7c681f7",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--A_CSIRya--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:sqlc%25E3%2581%25A7%25E3%2583%2588%25E3%2583%25A9%25E3%2583%25B3%25E3%2582%25B6%25E3%2582%25AF%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E3%2581%25AE%25E3%2583%25AD%25E3%2583%25BC%25E3%2583%25AB%25E3%2583%2590%25E3%2583%2583%25E3%2582%25AF%25E3%2582%25A8%25E3%2583%25A9%25E3%2583%25BC%25E3%2582%2592%25E9%2581%25A9%25E5%2588%2587%25E3%2581%25AB%25E5%2587%25A6%25E7%2590%2586%25E3%2581%2599%25E3%2582%258B%25E6%2596%25B9%25E6%25B3%2595%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2024-11-07T22:00:05+00:00",
       "summary": "背景 sqlcでトランザクションを使うことについて、公式ドキュメントを見ていると、少し気になるところがあったので、自分なりにコードを改善してみました。 https://docs.sqlc.dev/en/stable/howto/transactions.html 公式のコード func bumpCounter(ctx context.Context, db *sql.DB, queries *tutorial.Queries, id int32) error { tx, err := db.Begin() if err != nil { return err } de...",
       "category": "その他",
@@ -212,6 +238,7 @@
     {
       "title": "Chrome拡張機能からページのグローバル変数にアクセスする",
       "url": "https://zenn.dev/urakawa_jinsei/articles/62c1a9f72dc294",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--lJlQbfhM--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Chrome%25E6%258B%25A1%25E5%25BC%25B5%25E6%25A9%259F%25E8%2583%25BD%25E3%2581%258B%25E3%2582%2589%25E3%2583%259A%25E3%2583%25BC%25E3%2582%25B8%25E3%2581%25AE%25E3%2582%25B0%25E3%2583%25AD%25E3%2583%25BC%25E3%2583%2590%25E3%2583%25AB%25E5%25A4%2589%25E6%2595%25B0%25E3%2581%25AB%25E3%2582%25A2%25E3%2582%25AF%25E3%2582%25BB%25E3%2582%25B9%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2024-10-24T22:00:05+00:00",
       "summary": "背景 Chromeの拡張機能から、対象ページに定義されているグローバル変数にアクセスしたいと思いましたが、その方法を見つけるのに苦労したので、ここに記録しておきます。 前提条件 以下のように、対象ページにwindow.$DATAというグローバル変数が定義されているとします。 このグローバル変数の値をコンソールに出力します。 index.html window.$DATA = {\"PARAM\":test} 失敗：スクリプトをインジェクトする ./ ├──manifest.json └──content-scrip...",
       "category": "その他",
@@ -220,6 +247,7 @@
     {
       "title": "PostgreSQL✖️Dockerスターターテンプレート",
       "url": "https://zenn.dev/urakawa_jinsei/articles/eaf11ca2fd17f6",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--XrneSBvy--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:PostgreSQL%2520Docker%25E3%2582%25B9%25E3%2582%25BF%25E3%2583%25BC%25E3%2582%25BF%25E3%2583%25BC%25E3%2583%2586%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%2588%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2024-10-11T02:10:38+00:00",
       "summary": "はじめに DockerでテストDBを作成することは多いのですが、毎回構築方法を忘れてしまうので、ここにメモとして残しておくことにしました ディレクトリ構成 ./ ├──init │ ├──create_schema.sql │ ├──create_tables.sql │ └──insert_sample_data.sql └──docker-compose.yml docker-compose.yml docker-compose.yml version: '3' services: db: image: postgres:17 contain...",
       "category": "その他",
@@ -228,6 +256,7 @@
     {
       "title": "Raycastを使いこなして生産性を爆上げする",
       "url": "https://zenn.dev/urakawa_jinsei/articles/ccd1e6bf47ea72",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--zJc6v4tR--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Raycast%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%2584%25E3%2581%2593%25E3%2581%25AA%25E3%2581%2597%25E3%2581%25A6%25E7%2594%259F%25E7%2594%25A3%25E6%2580%25A7%25E3%2582%2592%25E7%2588%2586%25E4%25B8%258A%25E3%2581%2592%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2024-09-30T00:37:17+00:00",
       "summary": "Raycastとは https://www.raycast.com/ Raycastは、macOS用の高機能なランチャーアプリケーションです。Spotlightの強化版とも言えるこのツールは、アプリケーションの起動やファイル検索だけでなく、システム操作の簡略化、クリップボード履歴の管理、スニペットの活用など、多岐にわたる機能を提供します。ユーザーインターフェースが直感的で使いやすく、カスタマイズ性も高いため、日々のPC作業を大幅に効率化できます。また、拡張機能を追加することで機能を拡張でき、ユーザーのニーズに合わせて柔軟にカスタマイズすることが可能です。Raycastを使いこなすこと...",
       "category": "その他",
@@ -236,6 +265,7 @@
     {
       "title": "ChatGPTに、TDDを説明するスライドをMarpで作ってもらう",
       "url": "https://zenn.dev/urakawa_jinsei/articles/234546ee9f353d",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--a4hCJqGQ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:ChatGPT%25E3%2581%25AB%25E3%2580%2581TDD%25E3%2582%2592%25E8%25AA%25AC%25E6%2598%258E%25E3%2581%2599%25E3%2582%258B%25E3%2582%25B9%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2589%25E3%2582%2592Marp%25E3%2581%25A7%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2582%2582%25E3%2582%2589%25E3%2581%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2024-09-25T07:15:54+00:00",
       "summary": "新規PJでTDDを導入することになったので、チームメンバーにTDDのメリットを説明するため、ChatGPTにMarpでスライドを作ってもらいました。 Marpとは https://marp.app/ Marpは、Markdownを使用してプレゼンテーションスライドを作成するためのツールです。以下にMarpの主な特徴を説明します: 主な特徴 簡単な使用法: Markdown記法でスライドを作成できるため、使いやすさが特徴です。 自動レイアウト: レイアウトや書式を自動で整えてくれるので、内容に集中できます。 出力形式: HTML、PDF、PowerPointなど、様々な...",
       "category": "その他",
@@ -244,6 +274,7 @@
     {
       "title": "CloudBuildでgolangci-lintを実行する",
       "url": "https://zenn.dev/urakawa_jinsei/articles/a86b4cead4c669",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--fdokQboT--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:CloudBuild%25E3%2581%25A7golangci-lint%25E3%2582%2592%25E5%25AE%259F%25E8%25A1%258C%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2024-08-08T04:24:29+00:00",
       "summary": "結論 cloudbuild.yamlに以下を追加すれば、実装できます cloudbuild.yaml steps: # golangci-lintのDockerイメージを指定する - name: 'golangci/golangci-lint' # デフォルトの設定でgolangci-lintを実行する args: ['golangci-lint', 'run'] golangci-lint[1]とは golangci-lint is a fast Go linters runner. It runs linters in parallel, us...",
       "category": "その他",
@@ -252,6 +283,7 @@
     {
       "title": "GoとGinでRESTful APIを開発する",
       "url": "https://zenn.dev/urakawa_jinsei/articles/e5ba6eea41f96b",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--57jsnXtU--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Go%25E3%2581%25A8Gin%25E3%2581%25A7RESTful%2520API%25E3%2582%2592%25E9%2596%258B%25E7%2599%25BA%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2024-05-28T00:00:00+00:00",
       "summary": "! この記事は、Goの公式が提供している、Tutorial: Developing a RESTful API with Go and Gin を日本語に訳したものです。 https://go.dev/doc/tutorial/web-service-gin Tutorial: Developing a RESTful API with Go and Gin このチュートリアルでは、GoとGin Web Framework（Gin）を使ってRESTfulなWebサービスAPIを書く基本を紹介します。 Ginは、Webサービスを含むWebアプリケーションの構築に関連する多くのコーディ...",
       "category": "その他",
@@ -260,6 +292,7 @@
     {
       "title": "『じゃらんnet』公式アプリの高速リニューアル事例を大公開 〜プロデザ！BYリクルートvol.17〜",
       "url": "https://zenn.dev/urakawa_jinsei/articles/e048602148f6bc",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--ywDbWNht--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258E%25E3%2581%2598%25E3%2582%2583%25E3%2582%2589%25E3%2582%2593net%25E3%2580%258F%25E5%2585%25AC%25E5%25BC%258F%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2581%25AE%25E9%25AB%2598%25E9%2580%259F%25E3%2583%25AA%25E3%2583%258B%25E3%2583%25A5%25E3%2583%25BC%25E3%2582%25A2%25E3%2583%25AB%25E4%25BA%258B%25E4%25BE%258B%25E3%2582%2592%25E5%25A4%25A7%25E5%2585%25AC%25E9%2596%258B%2520%25E3%2580%259C%25E3%2583%2597%25E3%2583%25AD%25E3%2583%2587%25E3%2582%25B6%25EF%25BC%2581BY%25E3%2583%25AA%25E3%2582%25AF%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%2588vol.17%25E3%2580%259C%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2024-03-14T23:00:00+00:00",
       "summary": "不確実性が大きいプルダクトのリニューアルをスピーティに実現するには プロダクトを大きく変革したいけど、なかなか踏み出せない スコープが不確実 デリバリーが不確実 成果が不確実 事例 じゃらんnetの公式アプリのリニューアルプロジェクト 成果 TOP画面のリニューアルでUX改善 当初想定から工期を3分の1短縮 ビジョン プラスアルファの魅力品質を提供したい 課題 メイン機能がわかりにくいTOP画面→プロダクトの理想像”魅力品質”に向けて、”一見品質”の改善を早期に実現する！ スコープの不悪実性 最優先の検証スコープに絞る 課題の仮説を絞り込む ...",
       "category": "その他",
@@ -268,6 +301,7 @@
     {
       "title": "GoDay 出張編 @ DeNA TechCon 2024",
       "url": "https://zenn.dev/urakawa_jinsei/articles/a0452aadaf66ef",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--YzdydPcC--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:GoDay%2520%25E5%2587%25BA%25E5%25BC%25B5%25E7%25B7%25A8%2520%2540%2520DeNA%2520TechCon%25202024%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2024-03-03T23:47:31+00:00",
       "summary": "GoDay 出張編 @ DeNA TechCon 2024 〜DeNA Techcon 2024の裏で Go好きエンジニアがゆるくLTする会〜 Goのジェネリクス実装方針 Go1.18で採用されたジェネリクスの実装は「Stencling」「辞書」を組み合わせたもの Goshapeが同じであればインスタンス化された辞書を提供できるので、辞書周りのコストが削減できる バイナリサイズが大きくなる原因は型情報を含む辞書を保持するため 闇雲にジェネリクス化を進めるとバイナリサイズは増えるが、急激に増えるような実装にはなっていない Proposal探検 Proposalとは G...",
       "category": "その他",
@@ -276,6 +310,7 @@
     {
       "title": "エンジニアの未来を考える",
       "url": "https://zenn.dev/urakawa_jinsei/articles/158a3419e73dee",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--QnR1Szdj--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%258B%25E3%2582%25A2%25E3%2581%25AE%25E6%259C%25AA%25E6%259D%25A5%25E3%2582%2592%25E8%2580%2583%25E3%2581%2588%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2024-02-22T07:43:32+00:00",
       "summary": "以下は、RECRUIT TECH CONFERENCE2024で行われたセミナーのメモを整理したものです。このセミナーでは、エンジニアの未来と必要なスキルについて議論されました。 これからのエンジニアに必要なスキル スキルについて エンジニアと非エンジニアの間には大きなギャップがあり、エンジニアはプログラミングスキルが全てだと考えがちです。 しかし、エンジニアにとってプログラミングだけがスキルではありません。コミュニケーションスキルなど、他の部分にも目を向けることが重要です。 生成AIについて 一見関係のないもの同士を組み合わせることで新たな発見が出てくることがあります...",
       "category": "その他",
@@ -284,6 +319,7 @@
     {
       "title": "ロングランオペレーション",
       "url": "https://zenn.dev/urakawa_jinsei/articles/3a7edaf7d4c08d",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--Sd8ZSdKd--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%25AD%25E3%2583%25B3%25E3%2582%25B0%25E3%2583%25A9%25E3%2583%25B3%25E3%2582%25AA%25E3%2583%259A%25E3%2583%25AC%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2024-02-20T22:30:10+00:00",
       "summary": "LRO 通常のAPIは、リクエストを受け取るとすぐに何かしらの処理を行い、その結果をすぐに返します。これは、APIがすぐに結果を返すことが期待される「同期的な」動作です。しかし、APIが行う仕事が複雑で時間がかかる場合、すぐに結果を返すことは難しくなります。例えば、大量のデータを処理するなどの重労働が必要な場合や、外部のサービスに接続するなどの作業が必要な場合です。 このような問題は、Web APIだけでなく、ローカルに実行されるプログラムでもよく起きます。時間がかかる処理をしたいけれども、その処理が終わるのを待っている間に他の作業を進めたいという場合です。このような問題を解決するた...",
       "category": "その他",
@@ -292,6 +328,7 @@
     {
       "title": "SPAから動的に挿入されるDOMを取得する",
       "url": "https://zenn.dev/urakawa_jinsei/articles/a853ad3d71268f",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--hEh7lgO7--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:SPA%25E3%2581%258B%25E3%2582%2589%25E5%258B%2595%25E7%259A%2584%25E3%2581%25AB%25E6%258C%25BF%25E5%2585%25A5%25E3%2581%2595%25E3%2582%258C%25E3%2582%258BDOM%25E3%2582%2592%25E5%258F%2596%25E5%25BE%2597%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2024-02-08T02:18:08+00:00",
       "summary": "chromeの拡張機能開発で、SPAからDOMを取得する際にハマったので、メモとして残しておきます。 問題点 例えば、以下のように、同期的に挿入されるsampleクラスがあったとします。 sample 最初は、画面の描画が完了したら、DOMを取得しようと思いました。 しかし、結果はnullでした。 window.onload = function() { let sample = document.querySelector(\".sample\") console.log(sampl...",
       "category": "その他",
@@ -300,6 +337,7 @@
     {
       "title": "goroutineで気をつけること",
       "url": "https://zenn.dev/urakawa_jinsei/articles/a1d4bccc35534d",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--61aw50zy--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:goroutine%25E3%2581%25A7%25E6%25B0%2597%25E3%2582%2592%25E3%2581%25A4%25E3%2581%2591%25E3%2582%258B%25E3%2581%2593%25E3%2581%25A8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2024-01-24T06:10:10+00:00",
       "summary": "for文で並行処理をしたい状況はたくさんあると思います。 var wg sync.WaitGroup for i := 0; i < 10; i++ { wg.Add(1) go func() { defer wg.Done() fmt.Println(i) }() } wg.Wait() 上記のコードを実行すると、どのような結果が得られると思いますか？ 5 10 10 10 7 10 10 10 10 10 実行するごとに、異なる結果が出ると思います。 これは、goroutineの中で変数iを表示するときにはすでに、forループが終了してしまっているからです。 これ...",
       "category": "その他",
@@ -308,6 +346,7 @@
     {
       "title": "entでINNER JOINを行う",
       "url": "https://zenn.dev/urakawa_jinsei/articles/dd5e2e06241514",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--kl5D1uJv--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:ent%25E3%2581%25A7INNER%2520JOIN%25E3%2582%2592%25E8%25A1%258C%25E3%2581%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2024-01-17T00:00:00+00:00",
       "summary": "https://github.com/urakawa-jinsei/ent-join entでのINNER JOINの実装方法がいまいち正確に載っていなかったので、頑張って調べてみました。 ER図 スキーマ定義 ent/schema/uploadedcontent.go package schema // Fields of the UploadedContent. // Edges of the UploadedContent. func (UploadedContent) Edges() []ent.Edge { return []ent.Edge{ edge.T...",
       "category": "その他",
@@ -316,6 +355,7 @@
     {
       "title": "【GoとPython】異なる言語、共通する哲学",
       "url": "https://zenn.dev/urakawa_jinsei/articles/6a121de1908dd1",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--CXwbu2GH--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Go%25E3%2581%25A8Python%25E3%2580%2591%25E7%2595%25B0%25E3%2581%25AA%25E3%2582%258B%25E8%25A8%2580%25E8%25AA%259E%25E3%2580%2581%25E5%2585%25B1%25E9%2580%259A%25E3%2581%2599%25E3%2582%258B%25E5%2593%25B2%25E5%25AD%25A6%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2023-12-27T02:31:09+00:00",
       "summary": "この記事はAndrew Gerrand氏のGo and the Zen of Python[1]を訳したものです。 \"Beautiful is better than ugly.\" Goは、C言語を彷彿とさせる軽量で規則的な構文を持っている しかし、美しいか醜いかは、個人に依存する \"Simple is better than complex.\" メソッドはただの関数であり、特別な場所は無い thisやselfなどのキーワードはなく、レシーバは他の関数引数と同じようなものである type Vector struct { X, Y float64 } func (v Ve...",
       "category": "その他",
@@ -324,6 +364,7 @@
     {
       "title": "Airで始めるGo開発",
       "url": "https://zenn.dev/urakawa_jinsei/articles/a5a222f67a4fac",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--V7-cC0PB--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Air%25E3%2581%25A7%25E5%25A7%258B%25E3%2582%2581%25E3%2582%258BGo%25E9%2596%258B%25E7%2599%25BA%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2023-12-17T22:00:00+00:00",
       "summary": "RetailAI Adventurers Advent Calendar 2023の18日目の記事になります。 今回、僕の担当しているプロジェクトで、.air.tomlという見慣れないファイルを見つけたので、それについて調べてみました。 .air.tomlとは、Go言語のホットリロードツールであるAirの設定ファイルです。 https://github.com/cosmtrek/air ホットリロードとは、ソースコードを更新するたびにソースをビルドし直して実行するという手間を省くため、ソースコードを更新し、保存したら自動でビルドと実行を行うということです。 プロジェクトのルートディレク...",
       "category": "その他",
@@ -332,6 +373,7 @@
     {
       "title": "Google Kubernetes Engine (GKE) 道場 -入門編- に参加してきました！",
       "url": "https://zenn.dev/urakawa_jinsei/articles/dc1e09dd3845d4",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--OnCm3DaA--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Google%2520Kubernetes%2520Engine%2520%2528GKE%2529%2520%25E9%2581%2593%25E5%25A0%25B4%2520-%25E5%2585%25A5%25E9%2596%2580%25E7%25B7%25A8-%2520%25E3%2581%25AB%25E5%258F%2582%25E5%258A%25A0%25E3%2581%2597%25E3%2581%25A6%25E3%2581%258D%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%25EF%25BC%2581%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2023-12-14T01:54:14+00:00",
       "summary": "https://cloudonair.withgoogle.com/events/gkehandson-q4 フルマネージドな Kubernetes である GKE の概要や各機能について学習します。GKE の基礎的な内容から実運用で役立つベスト プラクティスについて学習します。 12/3に、Google Kubernetes Engine (GKE) 道場 -入門編- のハンズオンに参加しました。 そこでの内容を自分なりにまとめてみました。 コンテナ・Kubernetes とは コンテナとは？ コンテナとは、あらゆる環境で実行するために必要なすべての要素を含む、ソフトウェ...",
       "category": "その他",
@@ -340,6 +382,7 @@
     {
       "title": "忙しすぎるエンジニアのための開発環境リファクタリングガイドに参加してきました！",
       "url": "https://zenn.dev/urakawa_jinsei/articles/2d9319083f4e5c",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--xAJPEEYU--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%25BF%2599%25E3%2581%2597%25E3%2581%2599%25E3%2581%258E%25E3%2582%258B%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%258B%25E3%2582%25A2%25E3%2581%25AE%25E3%2581%259F%25E3%2582%2581%25E3%2581%25AE%25E9%2596%258B%25E7%2599%25BA%25E7%2592%25B0%25E5%25A2%2583%25E3%2583%25AA%25E3%2583%2595%25E3%2582%25A1%25E3%2582%25AF%25E3%2582%25BF%25E3%2583%25AA%25E3%2583%25B3%25E3%2582%25B0%25E3%2582%25AC%25E3%2582%25A4%25E3%2583%2589%25E3%2581%25AB%25E5%258F%2582%25E5%258A%25A0%25E3%2581%2597%25E3%2581%25A6%25E3%2581%258D%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%25EF%25BC%2581%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2023-11-13T04:59:28+00:00",
       "summary": "忙しすぎるエンジニアのための開発環境リファクタリングガイド https://dev.classmethod.jp/news/devops-webinar/ 11/7（火）にクラスメソッド株式会社が主催する、「忙しすぎるエンジニアのための開発環境リファクタリングガイド」のセミナーに参加してきました！ リファクタリング リファクタリングとは 外部からみた動作を変更せずに既存のコード本体を再構築しその内部構造を置き換えるコーディング技術 その手段として Automation（自動化） 反復的な手作業の排除 再現性・正確性の向上 Lean（リーン） 継続的な改善を前提 ...",
       "category": "その他",
@@ -348,6 +391,7 @@
     {
       "title": "Pub/SubをトリガーにCloud Runを動かす",
       "url": "https://zenn.dev/urakawa_jinsei/articles/5e1638d729ebb5",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--s17JFO7u--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Pub%252FSub%25E3%2582%2592%25E3%2583%2588%25E3%2583%25AA%25E3%2582%25AC%25E3%2583%25BC%25E3%2581%25ABCloud%2520Run%25E3%2582%2592%25E5%258B%2595%25E3%2581%258B%25E3%2581%2599%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2023-09-29T02:31:23+00:00",
       "summary": "Pub/SubをトリガーにCloud Runを動かす https://cloud.google.com/run/docs/tutorials/pubsub?hl=ja 処理の流れ Cloud Runにデプロイする メッセージをログに出力するだけのGoのソースコードです。 https://github.com/GoogleCloudPlatform/golang-samples/blob/HEAD/run/pubsub/main.go https://cloud.google.com/pubsub/docs/push?hl=ja#receive_push ステータスコード...",
       "category": "その他",
@@ -356,6 +400,7 @@
     {
       "title": "Cloud RunにCloud Deployで自動デプロイする",
       "url": "https://zenn.dev/urakawa_jinsei/articles/811197e50dc81b",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--2Mx3sNT2--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Cloud%2520Run%25E3%2581%25ABCloud%2520Deploy%25E3%2581%25A7%25E8%2587%25AA%25E5%258B%2595%25E3%2583%2587%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25A4%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2023-09-06T07:43:52+00:00",
       "summary": "https://zenn.dev/urakawa_jinsei/articles/26074f9e465f79 前回の記事では、Cloud Deployを使わずにCloud Runにデプロイしていましたが、今回はCloud Deployでデプロイする方法を紹介します。 https://cloud.google.com/deploy/docs/deploy-app-run?hl=ja Skaffold 構成を準備する skaffold.yaml apiVersion: skaffold/v3alpha1 kind: Config metadata: name: deploy-ru...",
       "category": "その他",
@@ -364,6 +409,7 @@
     {
       "title": "Cloud Run CI/CD完全ガイド",
       "url": "https://zenn.dev/urakawa_jinsei/articles/26074f9e465f79",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--8x_FeER2--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Cloud%2520Run%2520CI%252FCD%25E5%25AE%258C%25E5%2585%25A8%25E3%2582%25AC%25E3%2582%25A4%25E3%2583%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2023-08-29T01:18:21+00:00",
       "summary": "Cloud Run CI/CD完全ガイド cloudbuild.yamlを使用して、Cloud RunでCI/CDを実装します。 golang dockertest PostgreSQL Flow GitHubリポジトリにpush イメージをbuild and test Artifact Registryにイメージをpush Cloud Runにdeploy Buildトリガーを設定 https://cloud.google.com/build/docs/automating-builds/create-manage-triggers?hl=ja ここで、リポジトリ...",
       "category": "その他",
@@ -372,6 +418,7 @@
     {
       "title": "ent+dockertest",
       "url": "https://zenn.dev/urakawa_jinsei/articles/710380178532f6",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--w3X67i-G--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_80:ent%252Bdockertest%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2023-08-17T07:22:29+00:00",
       "summary": "ent+dockertest https://github.com/ory/dockertest https://pkg.go.dev/testing PostgreSQLで、dockertestを実装します。 dockertestは、テストを実行するとコンテナが立ち上がり、終了すると削除されます。 Sample server_test.go package dockertestpsql_test import ( \"database/sql\" \"example/ent\" \"fmt\" \"os\" \"strings\" \"testing\" \"time\" _ \"gi...",
       "category": "その他",
@@ -380,6 +427,7 @@
     {
       "title": "protoc-gen-validate",
       "url": "https://zenn.dev/urakawa_jinsei/articles/ae03e098b16d2e",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--V61I2GlP--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_80:protoc-gen-validate%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2023-08-08T03:56:56+00:00",
       "summary": "https://github.com/bufbuild/protoc-gen-validate protoc-gen-validateは、protoファイルのvalidationを行うプラグインです。 Code Sample example.proto syntax = \"proto3\"; package examplepb; import \"validate/validate.proto\"; message Person { uint64 id = 1 [(validate.rules).uint64.gt = 999]; string email = 2 [(v...",
       "category": "その他",
@@ -388,6 +436,7 @@
     {
       "title": "Buf Schema Registry",
       "url": "https://zenn.dev/urakawa_jinsei/articles/543b249ad0aff1",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--dLRU0qm8--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_76:Buf%2520Schema%2520Registry%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2023-08-07T06:13:54+00:00",
       "summary": "環境：Mac OS https://buf.build/docs/introduction Install the Buf CLI brew install bufbuild/buf/buf Clone the Git repository git clone https://github.com/bufbuild/buf-tour gitを削除 rm -rf .git ディレクトリを切り替える cd start/getting-started-with-bsr Log in to the BSR Buf Schema Registryにログインします。 Create...",
       "category": "その他",
@@ -396,6 +445,7 @@
     {
       "title": "alpineイメージでgcsfuseを実装する",
       "url": "https://zenn.dev/urakawa_jinsei/articles/38234c8d8de5d1",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--_oZO0Wx4--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:alpine%25E3%2582%25A4%25E3%2583%25A1%25E3%2583%25BC%25E3%2582%25B8%25E3%2581%25A7gcsfuse%25E3%2582%2592%25E5%25AE%259F%25E8%25A3%2585%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2023-08-02T08:33:45+00:00",
       "summary": "gcsfuseとは https://cloud.google.com/storage/docs/gcsfuse-mount?hl=ja gcsfuseは、Google Cloud Storage（GCS）をローカルファイルシステムにマウントするためのツールです。これにより、GCS上に保存されているデータをローカルファイルシステムとしてアクセスできるようになります。 Dockerfile FROM golang:1.20-alpine AS builder WORKDIR /app COPY . /app RUN go mod download RUN CGO_ENABLED...",
       "category": "その他",
@@ -404,6 +454,7 @@
     {
       "title": "Cloud Run自動デプロイ簡単ガイド",
       "url": "https://zenn.dev/urakawa_jinsei/articles/47b09fbe84b72d",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--Y9F-qfUF--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Cloud%2520Run%25E8%2587%25AA%25E5%258B%2595%25E3%2583%2587%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25A4%25E7%25B0%25A1%25E5%258D%2598%25E3%2582%25AC%25E3%2582%25A4%25E3%2583%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2023-07-07T05:31:18+00:00",
       "summary": "Cloud Run 自動デプロイ Flow Githubのブランチにプッシュされると、イメージをビルドしてArtifact Registryに登録し、Cloud Runにデプロイします Sample Dockerfile,cloudbuild.yamlをリポジトリのルートディレクトリに配置します。 Dockerfile # syntax=docker/dockerfile:1 ## ## Build ## FROM golang:1.16-buster AS build WORKDIR /app COPY go.mod ./ COPY go.sum ./ RUN g...",
       "category": "その他",
@@ -412,6 +463,7 @@
     {
       "title": "VSCodeでCloud Runに簡単にデプロイする",
       "url": "https://zenn.dev/urakawa_jinsei/articles/877c30342b36fb",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--yxqOtGnt--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:VSCode%25E3%2581%25A7Cloud%2520Run%25E3%2581%25AB%25E7%25B0%25A1%25E5%258D%2598%25E3%2581%25AB%25E3%2583%2587%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25A4%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2023-07-04T08:31:25+00:00",
       "summary": "goのアプリをVSCodeからCloud Runに簡単にデプロイする方法について説明します。 Artifact Registryへの登録も、yamlファイルを書く必要もありません。Dockerfileさえあれば、簡単にデプロイすることができます。 データベースの操作で、Cloud SQL Proxyも使用します。 コード INSTANCE_CONNECTION_NAME は project:region:instance-id 形式を使用します。 https://cloud.google.com/sql/docs/postgres/connect-run?hl=ja#go packa...",
       "category": "その他",
@@ -420,6 +472,7 @@
     {
       "title": "ent | Quick Introduction",
       "url": "https://zenn.dev/urakawa_jinsei/articles/d961417229f5f0",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--nZrnNTjf--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_72:ent%2520%257C%2520Quick%2520Introduction%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2023-06-16T01:31:57+00:00",
       "summary": "ent | Quick Introduction Quick Introduction entはGoのためのシンプルで強力なエンティティフレームワークで、大規模なデータモデルを持つアプリケーションの構築と保守を容易にし、以下の原則に忠実です： データベーススキーマをグラフ構造として簡単にモデル化できる。 スキーマをプログラム的なGoコードとして定義する。 コード生成に基づく静的型付け データベースクエリやグラフトラバーサルを簡単に書くことができる。 Goテンプレートを使って拡張やカスタマイズが簡単にできる。 環境構築 go.modを作成します。 bash go mod in...",
       "category": "その他",
@@ -428,6 +481,7 @@
     {
       "title": "GenAI-Tutorial",
       "url": "https://zenn.dev/urakawa_jinsei/articles/b71fe621d9f6b0",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--PawPiEDF--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_80:GenAI-Tutorial%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2023-06-01T01:29:48+00:00",
       "summary": "GenAI-Tutorial genai｜PyPI Google Colaboratoryでやります。 GenAIをインストールする pip install genai エラー発生 ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts. google-colab 1.0.0 requires...",
       "category": "その他",
@@ -436,6 +490,7 @@
     {
       "title": "Table Driven Tests",
       "url": "https://zenn.dev/urakawa_jinsei/articles/8de654bb2c1649",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--LfsM_K8f--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_76:Table%2520Driven%2520Tests%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2023-05-30T02:34:42+00:00",
       "summary": "Table Driven Tests 参考：Go言語｜プログラミングエッセンス 前回の記事の続きとなります。 GoではTable Driven Testsを推奨しています。難しそうな名前が付いていますが、これは単純にテストケースをテーブルとしてまとめたものです。 sample.go package hsd func StringDistance(lhs,rhs string) int { return Ditance([]rune(lhs),[]rune(rhs)) } func Ditance(a,b []rune) int { dist := 0 if len(a) ...",
       "category": "その他",
@@ -444,6 +499,7 @@
     {
       "title": "Goのテスト",
       "url": "https://zenn.dev/urakawa_jinsei/articles/68cc53acaab0c0",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--wvu0I7as--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_72:Go%25E3%2581%25AE%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2023-05-30T01:21:04+00:00",
       "summary": "Goのテスト 参考：Go言語 プログラミングエッセンス テストの考え方 一般的に、ソフトウェアにおけるテストには大きく二つの意味があります。 品質を保証するため テストが通っていることを他者に明示することにより、そのライブラリの使用者や開発の依頼もとに対して品質の良さをアピールすることです。 安全に壊すため 一度書き上げたソースコードに対して変更を行う際に、テストがあることによって安心してコードに手を加えられることを指します。「壊す」というと聞こえが悪いのですが、これは悪いことではなく、リファクタリングをする際にエラーを出してくれることで、知らない間に仕様を壊すことなく、...",
       "category": "その他",
@@ -452,6 +508,7 @@
     {
       "title": "goroutine",
       "url": "https://zenn.dev/urakawa_jinsei/articles/ed91d7eb654b4b",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--OyNwY0cw--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_80:goroutine%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2023-05-26T04:47:27+00:00",
       "summary": "goroutine（ゴルーチン） 参考：Go言語 プログラミングエッセンス スレッドとは プログラミングにおけるスレッド（スレッド）は、プログラムの実行フローの単位です。スレッドは、プロセス内で独立して動作する軽量な処理単位であり、複数のスレッドを同時に実行することで、並行性や並列性を実現することができます。 スレッドは、プロセス内のリソース（メモリ、ファイルハンドルなど）を共有しながら実行されます。つまり、複数のスレッドは同じメモリ空間にアクセスすることができ、データの共有や通信が比較的容易に行えます。ただし、スレッド同士が競合状態（データ競合）になることがあるため、注意が必要...",
       "category": "その他",
@@ -460,6 +517,7 @@
     {
       "title": "connect-go（Getting Started）",
       "url": "https://zenn.dev/urakawa_jinsei/articles/7c644f96e9a39c",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--mgsgj133--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_66:connect-go%25EF%25BC%2588Getting%2520Started%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2023-05-25T05:49:59+00:00",
       "summary": "connect-go Getting started | Connect 新しいGoモジュールを作成し、いくつかのコード生成ツールをインストールする shell mkdir connect-go-example cd connect-go-example go mod init example go install github.com/bufbuild/buf/cmd/buf@latest go install github.com/fullstorydev/grpcurl/cmd/grpcurl@latest go install google.golang.org/pro...",
       "category": "その他",
@@ -468,6 +526,7 @@
     {
       "title": "GoのCloudFunctionsデプロイ時のエラー",
       "url": "https://zenn.dev/urakawa_jinsei/articles/9ad3b526aed553",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--tWKQHG4C--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Go%25E3%2581%25AECloudFunctions%25E3%2583%2587%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25A4%25E6%2599%2582%25E3%2581%25AE%25E3%2582%25A8%25E3%2583%25A9%25E3%2583%25BC%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2023-05-09T08:50:23+00:00",
       "summary": "GoのCloudFunctionsデプロイ時のエラー GoogleCloudのCloudFunctionsについてです。 デプロイすると、このようなエラーが出ます。 log status: { code: 3 message: \"Build failed: functions.local/app/main.go:18:2: import \"example.com/myproject\" is a program, not an importable package; Error ID: ....\" } main.go package main import ( ... )...",
       "category": "その他",
@@ -476,6 +535,7 @@
     {
       "title": "ポインタとは",
       "url": "https://zenn.dev/urakawa_jinsei/articles/a098fd840dfcbb",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--rGn9ZEft--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%259D%25E3%2582%25A4%25E3%2583%25B3%25E3%2582%25BF%25E3%2581%25A8%25E3%2581%25AF%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2023-04-28T08:15:58+00:00",
       "summary": "ポインタとは 参考記事：https://qiita.com/Sekky0905/items/447efa04a95e3fec217f →ポインタとは、メモリ上のアドレスを値として入れられる変数のこと Go言語におけるポインタは、変数のアドレスを格納する特別な型です。 変数は、コンピュータメモリ上の特定の場所に割り当てられたスペースを表します。ポインタを使用すると、その変数のメモリアドレスを参照できます。これは、その変数の値を変更したり、関数にその変数への参照を渡したりするために非常に便利です。 Go言語では、ポインタは * を使って宣言されます。たとえば、以下は int 型のポインタ...",
       "category": "その他",
@@ -484,6 +544,7 @@
     {
       "title": "A Tour of Go（Basics）",
       "url": "https://zenn.dev/urakawa_jinsei/articles/d637e840358334",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--zDaVsYgq--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_66:A%2520Tour%2520of%2520Go%25EF%25BC%2588Basics%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
       "published_at": "2023-04-28T02:40:36+00:00",
       "summary": "A Tour of Go（Basics） A Tour of Goで勉強した内容についてまとめました。 A Tour of Go Packages, variables, and functions. fmt.Println package main import ( \"fmt\" \"math/rand\" ) func main() { fmt.Println(\"My favorite number is\", rand.Intn(10)) } メインパッケージを宣言する fmt、math/randモジュールをインポートする 好きな数字をランダムで出力する（０～９...",
       "category": "その他",
