@@ -21,9 +21,34 @@ const elements = {
   currentYear: document.getElementById('currentYear'),
   pagination: document.getElementById('pagination'),
   themeToggle: document.getElementById('themeToggle'),
+  preloader: document.getElementById('preloader'),
+  terminalText: document.getElementById('terminal-text'),
 };
 
 document.addEventListener('DOMContentLoaded', async () => {
+  // --- Preloader Animation ---
+  const textToType = 'Jinsei Urakawa';
+  const typingSpeed = 120; // ms
+  const delayAfterTyping = 500; // ms
+
+  const typeText = async () => {
+    if (elements.terminalText) {
+      for (let i = 0; i < textToType.length; i++) {
+        elements.terminalText.textContent += textToType.charAt(i);
+        await new Promise((resolve) => setTimeout(resolve, typingSpeed));
+      }
+    }
+
+    setTimeout(() => {
+      if (elements.preloader) {
+        elements.preloader.classList.add('hidden');
+      }
+    }, delayAfterTyping);
+  };
+
+  await typeText();
+  // --- End Preloader Animation ---
+
   initTheme();
   elements.currentYear.textContent = new Date().getFullYear();
 
