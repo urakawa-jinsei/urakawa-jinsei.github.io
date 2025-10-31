@@ -65,6 +65,13 @@ def parse_atom_feed(root: ET.Element) -> list[dict]:
                 link_node = candidate
         url = link_node.attrib.get("href", "") if link_node is not None else ""
 
+        enclosure_node = None
+        for candidate in entry.findall(f"{ATOM_NS}link"):
+            if candidate.attrib.get("rel") == "enclosure":
+                enclosure_node = candidate
+                break
+        enclosure = enclosure_node.attrib.get("href", "") if enclosure_node is not None else ""
+
         published_node = entry.find(f"{ATOM_NS}published") or entry.find(f"{ATOM_NS}updated")
         published_at = (published_node.text or "").strip() if published_node is not None else ""
 
@@ -85,6 +92,7 @@ def parse_atom_feed(root: ET.Element) -> list[dict]:
         article = {
             "title": title,
             "url": url,
+            "enclosure": enclosure,
             "published_at": published_at,
             "summary": summary,
             "category": categories[0] if categories else "その他",
@@ -104,6 +112,8 @@ def parse_rss_feed(root: ET.Element) -> list[dict]:
     for item in channel.findall("item"):
         title = (item.findtext("title") or "").strip()
         url = (item.findtext("link") or "").strip()
+        enclosure_node = item.find("enclosure")
+        enclosure = enclosure_node.attrib.get("url", "") if enclosure_node is not None else ""
 
         pub_date = (item.findtext("pubDate") or "").strip()
         published_at = pub_date
@@ -136,6 +146,7 @@ def parse_rss_feed(root: ET.Element) -> list[dict]:
         article = {
             "title": title,
             "url": url,
+            "enclosure": enclosure,
             "published_at": published_at,
             "summary": summary,
             "category": categories[0] if categories else "その他",
