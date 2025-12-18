@@ -1,6 +1,15 @@
 {
-  "last_updated": "2025-12-18T22:25:04.400341+00:00",
+  "last_updated": "2025-12-18T23:24:57.355528+00:00",
   "articles": [
+    {
+      "title": "なぜAPIに冪等性が必要なのか？設計から実装までを整理する",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/576e4736cda25e",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--5qtZWZ8M--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%25AA%25E3%2581%259CAPI%25E3%2581%25AB%25E5%2586%25AA%25E7%25AD%2589%25E6%2580%25A7%25E3%2581%258C%25E5%25BF%2585%25E8%25A6%2581%25E3%2581%25AA%25E3%2581%25AE%25E3%2581%258B%25EF%25BC%259F%25E8%25A8%25AD%25E8%25A8%2588%25E3%2581%258B%25E3%2582%2589%25E5%25AE%259F%25E8%25A3%2585%25E3%2581%25BE%25E3%2581%25A7%25E3%2582%2592%25E6%2595%25B4%25E7%2590%2586%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
+      "published_at": "2025-12-18T23:00:06+00:00",
+      "summary": "はじめに APIを実装していると、「同じリクエストが複数回送られてきたらどうなるのか？」と疑問に思ったことはありませんか？ 特に、決済処理やユーザー登録のような失敗が許されないAPIでは、この問題は非常に重要です。 本記事では、APIに冪等性を追加する方法について、概念の整理からデータベース設計、実際のAPIの流れまでを段階的に解説していきます。 冪等性とは何か 冪等性（Idempotency）の定義 冪等性とは、「同じ操作を何度実行しても、結果が変わらない性質」を指します。 これは数学や関数型プログラミング由来の概念ですが、Web APIの設計においても非常に重要です。 つ...",
+      "category": "その他",
+      "tags": []
+    },
     {
       "title": "PostgreSQLのパフォーマンスチューニング入門: インデックスの威力を体感せよ",
       "url": "https://zenn.dev/urakawa_jinsei/articles/e20e1f76f5109f",
