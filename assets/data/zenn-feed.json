@@ -1,6 +1,15 @@
 {
-  "last_updated": "2025-12-22T22:25:34.031327+00:00",
+  "last_updated": "2025-12-22T23:24:38.644702+00:00",
   "articles": [
+    {
+      "title": "Goで学ぶAPIのレートリミット入門",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/c2a57fa584d23b",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--VQFwldaN--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Go%25E3%2581%25A7%25E5%25AD%25A6%25E3%2581%25B6API%25E3%2581%25AE%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%2588%25E3%2583%25AA%25E3%2583%259F%25E3%2583%2583%25E3%2583%2588%25E5%2585%25A5%25E9%2596%2580%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
+      "published_at": "2025-12-22T23:00:01+00:00",
+      "summary": "tl;dr rate limitは、一定時間あたりのリクエスト数を制限する仕組みです サーバー保護・悪意あるアクセス対策・サービス品質維持のために重要です Golangでは golang.org/x/time/rate を使うことで、少ないコードで実装可能です vegetaを使うと、rate limitが正しく動作しているかを簡単に検証できます はじめに Web APIを実装していると、「アクセスが急増したらどうなるのか？」と考えたことはありませんか？ 特に外部に公開するAPIでは、意図しない大量アクセスや悪意あるリクエストへの対策が重要です。 本記事では、rate limi...",
+      "category": "その他",
+      "tags": []
+    },
     {
       "title": "人が成長する唯一の方法は「危機感」を感じること",
       "url": "https://zenn.dev/urakawa_jinsei/articles/4f4807ca5b70c0",
