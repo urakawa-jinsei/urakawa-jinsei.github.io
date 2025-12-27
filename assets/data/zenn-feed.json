@@ -1,6 +1,24 @@
 {
-  "last_updated": "2025-12-26T23:24:00.541605+00:00",
+  "last_updated": "2025-12-27T02:01:02.197557+00:00",
   "articles": [
+    {
+      "title": "エンジニアこそコミュニケーションが大事だと実感した話",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/2c1543bbf331e8",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--fOfVCEVN--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%258B%25E3%2582%25A2%25E3%2581%2593%25E3%2581%259D%25E3%2582%25B3%25E3%2583%259F%25E3%2583%25A5%25E3%2583%258B%25E3%2582%25B1%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E3%2581%258C%25E5%25A4%25A7%25E4%25BA%258B%25E3%2581%25A0%25E3%2581%25A8%25E5%25AE%259F%25E6%2584%259F%25E3%2581%2597%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
+      "published_at": "2025-12-27T01:00:02+00:00",
+      "summary": "tl;dr 仕事がうまく進まない原因は、技術力ではなくコミュニケーション不足であることが多いです 即レス・結論から話す・細かく確認するだけで、認識ズレは大きく減らせます 絵文字や図を使うことで、文章だけよりも意図が正確に伝わります 話を遮らず、素直に受け取る姿勢が信頼関係を作ります コミュニケーションはスキルであり、意識すれば誰でも改善可能です はじめに 「ちゃんと実装したのに、なぜか仕事がうまく進まない」と感じたことはありませんか？ 私自身、エンジニアとして数年働く中で、技術的には問題ないはずなのにトラブルになる場面を何度も経験してきました。 振り返ってみると、その多くはコ...",
+      "category": "その他",
+      "tags": []
+    },
+    {
+      "title": "パリティとは何かを完全に理解する",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/25e7267f0a5b77",
+      "enclosure": "https://res.cloudinary.com/zenn/image/upload/s--arhc4TDJ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%2591%25E3%2583%25AA%25E3%2583%2586%25E3%2582%25A3%25E3%2581%25A8%25E3%2581%25AF%25E4%25BD%2595%25E3%2581%258B%25E3%2582%2592%25E5%25AE%258C%25E5%2585%25A8%25E3%2581%25AB%25E7%2590%2586%25E8%25A7%25A3%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%25B5%25A6%25E5%25B7%259D%2520%25E4%25BB%2581%25E6%2588%2590%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiNDljOTA3NDYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACAGSGT",
+      "published_at": "2025-12-27T01:00:01+00:00",
+      "summary": "tl;dr パリティとは、ディスク障害時にデータを復元するための計算結果です RAIDでは、データを丸ごとコピーせず、XOR演算によるパリティで冗長性を確保します 0と1のXORを理解すると、なぜ復元できるのかが腹落ちします RAID 5 / RAID 6 の仕組みが、式レベルで説明できるようになります はじめに データベース設計を学び始めると、「RAID」「冗長化」「可用性」といった言葉と一緒にパリティという用語が頻繁に出てきます。 一方で、 パリティって結局なに？ なぜ壊れたディスクのデータが戻るの？ コピーしてないのに復元できるのはなぜ？ と疑問に思ったことはないでし...",
+      "category": "その他",
+      "tags": []
+    },
     {
       "title": "Goで学ぶAPIのレートリミット入門",
       "url": "https://zenn.dev/urakawa_jinsei/articles/c2a57fa584d23b",
