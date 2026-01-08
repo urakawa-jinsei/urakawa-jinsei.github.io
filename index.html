@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="浦川 仁成 - バックエンドエンジニア。Go, Java, PostgreSQL, MySQL, Docker, Google Cloudを使った開発を行っています。">
+    <meta name="keywords" content="バックエンドエンジニア, Go, Java, PostgreSQL, MySQL, Docker, Google Cloud">
+    <meta name="author" content="浦川 仁成">
+    <meta property="og:title" content="浦川 仁成 | Backend Engineer">
+    <meta property="og:description" content="バックエンドエンジニアとして、Go, Java, PostgreSQL, MySQL, Docker, Google Cloudを使った開発を行っています。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://urakawa-jinsei.github.io">
+    <meta property="og:image" content="images/icon.png">
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <title>浦川 仁成 | Backend Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-spinner"></div>
+        <p class="loading-text">Loading...</p>
+    </div>
+
+    <!-- Cursor Effect -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-text">JU</span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li class="nav-item"><a href="#articles" class="nav-link">Articles</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-particles" id="particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-image-wrapper">
+                <div class="hero-image-glow"></div>
+                <img src="images/icon.png" alt="浦川 仁成" class="hero-image">
+            </div>
+            <div class="hero-text">
+                <p class="hero-greeting animate-text">Hi, I'm</p>
+                <h1 class="hero-name animate-text">
+                    <span class="name-highlight">浦川</span> 仁成
+                </h1>
+                <h2 class="hero-title animate-text">
+                    <span class="typing-text" id="typing-text"></span>
+                    <span class="typing-cursor">|</span>
+                </h2>
+                <p class="hero-description animate-text">
+                    Go・Javaを用いたバックエンド開発を得意とするエンジニアです。<br>
+                    シンプルで保守性の高いコードを追求しています。
+                </p>
+                <div class="hero-cta animate-text">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Contact Me</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#articles" class="btn btn-secondary">
+                        <span>View Articles</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">01.</span>
+                About Me
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        福岡を拠点に活動するバックエンドエンジニアです。
+                        高等学校・専門学校でプログラミングを学び、2023年より株式会社トライアルカンパニーでエンジニアとしてのキャリアをスタートしました。
+                    </p>
+                    <p class="about-description">
+                        現在は株式会社みんなの銀行/ゼロバンク・デザインファクトリー株式会社にて、
+                        GoとJavaを用いたバックエンド開発に従事しています。
+                        シンプルで読みやすく、保守性の高いコードを書くことを心がけています。
+                    </p>
+                    <p class="about-description">
+                        技術ブログの執筆やコミュニティ活動も積極的に行っており、
+                        Zennでは40以上の技術記事を公開しています。
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="stat-number" data-count="2">0</div>
+                        <div class="stat-label">Years of Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="stat-number" data-count="40">0</div>
+                        <div class="stat-label">Technical Articles</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="stat-number" data-count="3">0</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">02.</span>
+                Experience
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025.10 - Present</div>
+                        <h3 class="timeline-title">株式会社みんなの銀行 / ゼロバンク・デザインファクトリー株式会社</h3>
+                        <p class="timeline-role">Backend Engineer</p>
+                        <p class="timeline-description">
+                            デジタルバンクのバックエンド開発に従事。Go言語を用いたマイクロサービス開発を担当。
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023.04 - 2025.09</div>
+                        <h3 class="timeline-title">株式会社トライアルカンパニー</h3>
+                        <p class="timeline-role">Backend Engineer</p>
+                        <p class="timeline-description">
+                            小売業界のDX推進に向けたバックエンドシステムの開発・運用を担当。
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot education"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020.04 - 2023.03</div>
+                        <h3 class="timeline-title">麻生情報ビジネス専門学校</h3>
+                        <p class="timeline-role">情報システム科</p>
+                        <p class="timeline-description">
+                            プログラミング、データベース、ネットワークなどIT全般について学習。
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot education"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2017.04 - 2020.03</div>
+                        <h3 class="timeline-title">長崎県立諫早商業高等学校</h3>
+                        <p class="timeline-role">情報科</p>
+                        <p class="timeline-description">
+                            プログラミングの基礎や簿記などのビジネススキルを習得。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">03.</span>
+                Skills
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="go">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg" alt="Go">
+                    </div>
+                    <h3 class="skill-name">Go</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-skill="java">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                    </div>
+                    <h3 class="skill-name">Java</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-skill="postgresql">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                    </div>
+                    <h3 class="skill-name">PostgreSQL</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-skill="mysql">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                    </div>
+                    <h3 class="skill-name">MySQL</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-skill="docker">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                    </div>
+                    <h3 class="skill-name">Docker</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-skill="gcp">
+                    <div class="skill-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud">
+                    </div>
+                    <h3 class="skill-name">Google Cloud</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section certifications" id="certifications">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">04.</span>
+                Certifications
+            </h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="cert-name">応用情報技術者試験</h3>
+                    <p class="cert-org">IPA 情報処理推進機構</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon oracle">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3 class="cert-name">Oracle Certified Java Programmer, Gold SE 11</h3>
+                    <p class="cert-org">Oracle</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon boki">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3 class="cert-name">日商簿記検定3級</h3>
+                    <p class="cert-org">日本商工会議所</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="section articles" id="articles">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">05.</span>
+                Latest Articles
+            </h2>
+            <div class="articles-grid" id="articles-grid">
+                <!-- Articles will be loaded dynamically -->
+                <div class="article-skeleton"></div>
+                <div class="article-skeleton"></div>
+                <div class="article-skeleton"></div>
+            </div>
+            <div class="articles-cta">
+                <a href="https://zenn.dev/urakawa_jinsei" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                    <span>View All Articles</span>
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">06.</span>
+                Get In Touch
+            </h2>
+            <div class="contact-content">
+                <p class="contact-description">
+                    お仕事のご依頼やご質問がありましたら、お気軽にご連絡ください。<br>
+                    SNSやメディアからもコンタクトいただけます。
+                </p>
+                <div class="social-links">
+                    <a href="https://zenn.dev/urakawa_jinsei" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Zenn">
+                        <svg viewBox="0 0 88 88" class="social-icon zenn-icon">
+                            <path fill="currentColor" d="M2.51,81.58H20.29a2.58,2.58,0,0,0,2.21-1.24L60.67,14.64a1.47,1.47,0,0,0-1.26-2.2H42.56a2.93,2.93,0,0,0-2.46,1.38L1.26,79.24A1.48,1.48,0,0,0,2.51,81.58Z"/>
+                            <path fill="currentColor" d="M61.19,81.58H78.42a1.48,1.48,0,0,0,1.25-2.25L64.8,55.54a1.68,1.68,0,0,0-2.65-.08L49.57,73.29A2.74,2.74,0,0,0,48.84,75l.8,4.93A1.51,1.51,0,0,0,61.19,81.58Z"/>
+                        </svg>
+                        <span>Zenn</span>
+                    </a>
+                    <a href="https://qiita.com/urakawa_jinsei" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Qiita">
+                        <svg viewBox="0 0 24 24" class="social-icon qiita-icon">
+                            <path fill="currentColor" d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm1.125 16.5h-2.25v-6h2.25v6zm-1.125-7.5a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"/>
+                        </svg>
+                        <span>Qiita</span>
+                    </a>
+                    <a href="https://github.com/urakawa-jinsei" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github social-icon"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://connpass.com/user/urakawa-jinsei/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Connpass">
+                        <svg viewBox="0 0 24 24" class="social-icon connpass-icon">
+                            <circle fill="currentColor" cx="12" cy="12" r="10"/>
+                            <text x="12" y="16" text-anchor="middle" fill="white" font-size="10" font-weight="bold">C</text>
+                        </svg>
+                        <span>Connpass</span>
+                    </a>
+                    <a href="https://speakerdeck.com/urakawa_jinsei" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Speaker Deck">
+                        <i class="fab fa-speaker-deck social-icon"></i>
+                        <span>Speaker Deck</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/urakawa-jinsei/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin social-icon"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://x.com/jins8urakawa" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="X">
+                        <i class="fab fa-x-twitter social-icon"></i>
+                        <span>X</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    Designed & Built by <span class="footer-name">浦川 仁成</span>
+                </p>
+                <p class="footer-copyright">
+                    &copy; 2025 - <span id="current-year"></span> All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+{
+  "last_updated": "2026-01-08T14:03:42.051123+00:00",
+  "articles": [
+    {
+      "title": "macで常にアプリをフルスクリーンで開く方法",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/750ef4092803e5",
+      "path": "/urakawa_jinsei/articles/750ef4092803e5",
+      "published_at": "2026-01-05T23:00:05+00:00",
+      "summary": "tl;dr macOSのウィンドウ管理ツール AeroSpace を使うことで、アプリを常にフルスクリーンで起動できます Homebrewで brew install --cask nikitabobko/tap/aerospace を実行するだけで導入可能です ~/.aerospace.toml に macos-native-fullscreen を設定すると自動でフルスクリーン化されます 設定変更後は aerospace reload-config で即時反映できます はじめに macを使っていて、「毎回アプリを起動するたびにフルスクリーンにするのが面倒」と思ったことは...",
+      "emoji": "📝",
+      "liked_count": 0
+    },
+    {
+      "title": "エンジニアこそコミュニケーションが大事だと実感した話",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/eb9736622e25a6",
+      "path": "/urakawa_jinsei/articles/eb9736622e25a6",
+      "published_at": "2026-01-03T03:00:01+00:00",
+      "summary": "tl;dr 仕事がうまく進まない原因は、技術力ではなくコミュニケーション不足であることが多いです 即レス・結論から話す・細かく確認するだけで、認識ズレは大きく減らせます 絵文字や図を使うことで、文章だけよりも意図が正確に伝わります 話を遮らず、素直に受け取る姿勢が信頼関係を作ります コミュニケーションはスキルであり、意識すれば誰でも改善可能です はじめに 「ちゃんと実装したのに、なぜか仕事がうまく進まない」と感じたことはありませんか？ 私自身、エンジニアとして数年働く中で、技術的には問題ないはずなのにトラブルになる場面を何度も経験してきました。 振り返ってみると、その多くはコ...",
+      "emoji": "📝",
+      "liked_count": 0
+    },
+    {
+      "title": "パリティとは何かを完全に理解する",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/bdf98e3351a4ba",
+      "path": "/urakawa_jinsei/articles/bdf98e3351a4ba",
+      "published_at": "2026-01-03T03:00:01+00:00",
+      "summary": "tl;dr パリティとは、ディスク障害時にデータを復元するための計算結果です RAIDでは、データを丸ごとコピーせず、XOR演算によるパリティで冗長性を確保します 0と1のXORを理解すると、なぜ復元できるのかが腹落ちします RAID 5 / RAID 6 の仕組みが、式レベルで説明できるようになります はじめに データベース設計を学び始めると、「RAID」「冗長化」「可用性」といった言葉と一緒にパリティという用語が頻繁に出てきます。 一方で、 パリティって結局なに？ なぜ壊れたディスクのデータが戻るの？ コピーしてないのに復元できるのはなぜ？ と疑問に思ったことはないでし...",
+      "emoji": "📝",
+      "liked_count": 0
+    },
+    {
+      "title": "振込手数料がかからない時代へ。無料で使える「ことら送金」を今すぐ知ってほしい",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/3fdf853fc984a4",
+      "path": "/urakawa_jinsei/articles/3fdf853fc984a4",
+      "published_at": "2026-01-03T03:00:01+00:00",
+      "summary": "tl;dr ことら送金は、銀行口座同士で使える新しい個人間送金インフラです 1回10万円までの個人間送金が原則無料で利用できます 電話番号やメールアドレスだけで送金でき、口座番号を知らなくても使えます 銀行・利用者の双方にメリットがあるのに、まだ認知度が低い仕組みです はじめに 「個人間の送金って、意外と面倒だな」と感じたことはありませんか？ 口座番号を聞いたり、手数料を気にしたりと、ちょっとした送金でも心理的なハードルがあります。 私は銀行でエンジニアとして働いていますが、業務を通じてことら送金の認知度が想像以上に低いと感じています。 実際、調査データでもその傾向が示さ...",
+      "emoji": "📝",
+      "liked_count": 0
+    },
+    {
+      "title": "Goで学ぶAPIのレートリミット入門",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/c2a57fa584d23b",
+      "path": "/urakawa_jinsei/articles/c2a57fa584d23b",
+      "published_at": "2025-12-22T23:00:01+00:00",
+      "summary": "tl;dr rate limitは、一定時間あたりのリクエスト数を制限する仕組みです サーバー保護・悪意あるアクセス対策・サービス品質維持のために重要です Golangでは golang.org/x/time/rate を使うことで、少ないコードで実装可能です vegetaを使うと、rate limitが正しく動作しているかを簡単に検証できます はじめに Web APIを実装していると、「アクセスが急増したらどうなるのか？」と考えたことはありませんか？ 特に外部に公開するAPIでは、意図しない大量アクセスや悪意あるリクエストへの対策が重要です。 本記事では、rate limi...",
+      "emoji": "📝",
+      "liked_count": 0
+    },
+    {
+      "title": "人が成長する唯一の方法は「危機感」を感じること",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/4f4807ca5b70c0",
+      "path": "/urakawa_jinsei/articles/4f4807ca5b70c0",
+      "published_at": "2025-12-21T07:25:23+00:00",
+      "summary": "はじめに 「毎日忙しく働いているのに、なぜか成長している実感がない」と感じたことはありませんか？ 私自身、エンジニアとして数年働く中で、この違和感を強く感じた時期がありました。 この記事では、人が成長する唯一の方法は「危機感を感じること」であるというテーマについて、エンジニアのキャリア文脈で整理していきます。 技術的なチュートリアルではありませんが、日々の学習や環境選択に悩んでいる方にとって、何かしらのヒントになれば幸いです。 なお、本記事の着想は、以下のPodcastで語られていた内容に強く影響を受けています。 あわせてぜひ聴いてみてください。 https://podcasts.a...",
+      "emoji": "📝",
+      "liked_count": 0
+    },
+    {
+      "title": "なぜAPIに冪等性が必要なのか？設計から実装までを整理する",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/576e4736cda25e",
+      "path": "/urakawa_jinsei/articles/576e4736cda25e",
+      "published_at": "2025-12-18T23:00:06+00:00",
+      "summary": "はじめに APIを実装していると、「同じリクエストが複数回送られてきたらどうなるのか？」と疑問に思ったことはありませんか？ 特に、決済処理やユーザー登録のような失敗が許されないAPIでは、この問題は非常に重要です。 本記事では、APIに冪等性を追加する方法について、概念の整理からデータベース設計、実際のAPIの流れまでを段階的に解説していきます。 冪等性とは何か 冪等性（Idempotency）の定義 冪等性とは、「同じ操作を何度実行しても、結果が変わらない性質」を指します。 これは数学や関数型プログラミング由来の概念ですが、Web APIの設計においても非常に重要です。 つ...",
+      "emoji": "📝",
+      "liked_count": 0
+    },
+    {
+      "title": "PostgreSQLのパフォーマンスチューニング入門: インデックスの威力を体感せよ",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/e20e1f76f5109f",
+      "path": "/urakawa_jinsei/articles/e20e1f76f5109f",
+      "published_at": "2025-09-09T23:00:06+00:00",
+      "summary": "はじめに データベースのパフォーマンスチューニングって難しそう…と思っていませんか？ 今回は、シーケンシャルスキャン（Seq Scan）になっているクエリをインデックススキャン（Index Scan）に変えることで、クエリを劇的に高速化する手順を実測値つきでまとめます。 途中で実行計画の読み方やParallel Seq Scan / Gatherのポイントも押さえます。 EXPLAIN ANALYZE は計測オーバーヘッドが乗るので、素の実行より遅くなることがあります。数値は目安として見てください。(PostgreSQL) 環境構築（Docker） docker-comp...",
+      "emoji": "📝",
+      "liked_count": 0
+    },
+    {
+      "title": "【Go】コードの読み方を学ぶ - strings.Joinを題材に",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/8706c1ccb50c97",
+      "path": "/urakawa_jinsei/articles/8706c1ccb50c97",
+      "published_at": "2025-08-26T23:00:01+00:00",
+      "summary": "はじめに Go の標準ライブラリには、効率や安全性に配慮された設計が随所に見られます。 今回は、その中でもよく使われる strings.Join を題材に、「コードをどう読み解けばよいか」を順に見ていきます。 背景・目的 例えば、このようなコードがあります。 // Join concatenates the elements of its first argument to create a single string. // The separator string sep is placed between elements in the resulting string. ...",
+      "emoji": "📝",
+      "liked_count": 0
+    },
+    {
+      "title": "Makefile入門｜Goで学ぶ、はじめてのMakefile",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/a21e93692ca715",
+      "path": "/urakawa_jinsei/articles/a21e93692ca715",
+      "published_at": "2025-08-19T23:00:06+00:00",
+      "summary": "はじめに Goでプログラムを書いていると、 go build go run go test …など、毎回同じコマンドを入力するのが面倒になることありませんか？ そんなときに便利なのが Makefile です。 公式ドキュメントでは「依存関係に応じて必要な処理だけを実行するツール」と説明されていますが、Goプロジェクトに限って言えば 「よく使うコマンドをまとめておける便利な仕組み」 と考えるとわかりやすいです。 最小のMakefileを書いてみる まずはGoで「Hello, World」を出力するプログラムを作りましょう。 main.go package main impo...",
+      "emoji": "📝",
+      "liked_count": 0
+    },
+    {
+      "title": "【Go】複数のCloud Run Jobsをモノレポで管理する",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/07da4bf827c73a",
+      "path": "/urakawa_jinsei/articles/07da4bf827c73a",
+      "published_at": "2025-08-07T23:00:01+00:00",
+      "summary": "はじめに 本記事のゴール モノレポ構成でJobごとのディレクトリを整理 Dockerマルチステージビルドでバイナリを効率的に生成 Cloud Buildのループ処理でCI/CDを自動化 ディレクトリ構成 ディレクトリ構成 . ├── cloudbuild.yaml ├── cmd │ ├── cloud-run-jobs1 │ │ ├── Dockerfile │ │ └── main.go │ ├── cloud-run-jobs2 │ │ ├── Dockerfile │ │ └── main.go │ └── cloud...",
+      "emoji": "📝",
+      "liked_count": 0
+    },
+    {
+      "title": "【Go】sqlcでbulk insertをする方法",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/065cc07cc1ad05",
+      "path": "/urakawa_jinsei/articles/065cc07cc1ad05",
+      "published_at": "2025-08-06T23:00:01+00:00",
+      "summary": "はじめに 大量データを一括で挿入したい場面は多いのではないでしょうか？ 例えばバッチ処理で数百万件のデータを扱うとき、通常のINSERT文を1件ずつ実行すると、ネットワーク往復やトランザクションオーバーヘッドで処理時間が膨大になります。 PostgreSQLが提供するCOPYプロトコルを利用したbulk insert（まとめて挿入）を使うことで、シーケンシャルなINSERTと比べて数十倍〜数百倍の高速化が可能です。 Go向けORMツールのsqlcでは、コメントに:copyfromを付与するだけでこのCOPYプロトコルを簡単に利用できます。[1] 結論 SQLファイルのコメントに:...",
+      "emoji": "📝",
+      "liked_count": 0
+    },
+    {
+      "title": "gcloud storage cpで発生する storage.objects.get No such object エラーの真相",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/059d54948e3da8",
+      "path": "/urakawa_jinsei/articles/059d54948e3da8",
+      "published_at": "2025-07-07T23:00:01+00:00",
+      "summary": "はじめに Cloud Storageへのファイルアップロードのために、gcloud storage cpコマンドを使用すると、Cloud Loggingに、storage.objects.get No such objectというエラーが出力されます。 ファイルアップロードのコマンドをgsutil cpコマンドに変更すると、上記のエラーは出なくなります。 なぜでしょうか？ gcloud storage cpコマンドとgsutil cpコマンドの違いを調べてみました。 Cloud Logging 原因 gcloud storage cpは、パフォーマンス向上のために並列・分割アッ...",
+      "emoji": "📝",
+      "liked_count": 0
+    },
+    {
+      "title": "【Go】pq: database \"xxx\" does not existにハマった話",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/0554c12d5a27d2",
+      "path": "/urakawa_jinsei/articles/0554c12d5a27d2",
+      "published_at": "2025-06-16T23:00:02+00:00",
+      "summary": "はじめに Cloud Run Jobsから、Cloud SQLへの接続確認をしていました。 正しいデータベースを指定しているはずでしたが、何度やっても、以下のエラーが発生します。 pq: database \"xxx\" does not exist なぜでしょうか？ 原因 データベース名の末尾に、空白が入っていたことが原因でした。 同じ経験をしたことがある人も多いのではないでしょうか？ 解決 デフォルトのデータベース（postgres）には接続できたので、データベース名の一覧を出力し、データベース名と、接続したいデータベース名が合っているか、それぞれのデータベース名の文字数を出...",
+      "emoji": "📝",
+      "liked_count": 0
+    },
+    {
+      "title": "MCPを体験するだけ",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/b31ef87d0c6a76",
+      "path": "/urakawa_jinsei/articles/b31ef87d0c6a76",
+      "published_at": "2025-06-15T23:00:01+00:00",
+      "summary": "はじめに この記事は、MCPって何？という方が、初めの一歩を踏み出してみるための記事です。 公式のチュートリアルに従って、ファイルシステムMCPサーバーを体験します。 1. Claude for Desktopをインストール https://claude.ai/downloadで、Claude for Desktopをダウンロードして、インストールします。 2. ファイルシステムMCPサーバーを追加する まず、コンピュータでClaudeメニューを開き、「設定...」を選択します。これらは、アプリウィンドウ自体にある、アカウント設定ではないことに注意して下さい。 Macでは、次...",
+      "emoji": "📝",
+      "liked_count": 0
+    },
+    {
+      "title": "Cloud Run JobsのエラーをSlackに通知する",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/db5be14145cc44",
+      "path": "/urakawa_jinsei/articles/db5be14145cc44",
+      "published_at": "2025-05-27T23:00:01+00:00",
+      "summary": "1. Slack 通知チャネルを準備する GCP コンソール → Notification channels を開く Slack セクションで Add new をクリックし、ワークスペースとチャンネルを認可・登録する 2. Logs Explorer でクエリを作成 GCP コンソール → Logs Explorer を開く クエリ欄に以下を入力し、Run で結果を確認 resource.type=\"cloud_run_job\" severity=\"ERROR\" ( resource.labels.job_name=\"your-cloud-run-jobs-...",
+      "emoji": "📝",
+      "liked_count": 0
+    },
+    {
+      "title": "【Go】pq: password authentication failed for user \"xxx\" にハマった話",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/0b4031176ff47e",
+      "path": "/urakawa_jinsei/articles/0b4031176ff47e",
+      "published_at": "2025-05-26T23:00:01+00:00",
+      "summary": "はじめに Private IPを持ったCloud SQLに、Cloud Run Jobsから、Direct VPC Egressで接続しようとしていました。 しかし、接続がうまくいきません。 ユーザー名やパスワードはあっているはずなのに、以下のエラーが発生しました。 pq: password authentication failed for user \"xxx\" なぜでしょうか？ 修正前のコード 以下を参考に、TCPで接続する方法を選択しました。 https://cloud.google.com/sql/docs/postgres/connect-run?hl=ja#priva...",
+      "emoji": "📝",
+      "liked_count": 0
+    },
+    {
+      "title": "これで完璧！Goの演算子と区切り記号を網羅するまとめ",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/20892e7813b782",
+      "path": "/urakawa_jinsei/articles/20892e7813b782",
+      "published_at": "2025-05-07T23:00:06+00:00",
+      "summary": "はじめに Go 言語仕様では、演算子や句読点（トークン）があらかじめ定義され、プログラム中で特別な意味を持ちます。 知らない演算子がたくさんあったので、この機会にまとめてみました。 http://go.dev/ref/spec#Operators_and_punctuation 一覧表 トークン 説明 使用例 + 加算／正符号 sum := a + b - 減算／負符号 diff := a - b * 乗算／ポインタ参照 prod := a * b / 除算 quot := a / b % 剰余 rem := a % b << 左シフ...",
+      "emoji": "📝",
+      "liked_count": 0
+    },
+    {
+      "title": "知らないとヤバい！Go言語25の予約語まとめ＆使用例",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/facf886c446dfb",
+      "path": "/urakawa_jinsei/articles/facf886c446dfb",
+      "published_at": "2025-05-01T23:00:01+00:00",
+      "summary": "はじめに Go 言語仕様で予約されているキーワード25個の一覧と、それぞれの説明および使用例を紹介します。 gotoやfallthroughなどは知らなかったので、良い機会になりました。 以下の語は Go 言語があらかじめ予約しているキーワードなので、変数名や関数名など自分で名前を付ける識別子には使えません。 https://go.dev/ref/spec#Keywords 一覧表 キーワード 説明 使用例 break ループ (for) や switch から抜ける for i := 0; i < 10; i++ { if i == 5 { break } ...",
+      "emoji": "📝",
+      "liked_count": 0
+    },
+    {
+      "title": "「誰でも爆速で理解できる！Go のルーンリテラル10個のエスケープシーケンスまとめ」",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/5a6fbfeea9213b",
+      "path": "/urakawa_jinsei/articles/5a6fbfeea9213b",
+      "published_at": "2025-04-23T23:00:01+00:00",
+      "summary": "はじめに Go 言語では、単一の Unicode コードポイントを表す整数定数を ルーンリテラル（rune literal）として扱います。ルーンリテラルはシングルクォートで囲まれた 1 文字またはエスケープシーケンスで記述し、内部的には int32（別名 rune）型として扱われます。 本記事では、公式仕様書「Rune literals」に基づき、代表的なエスケープシーケンスの一覧と、それらを使った出力例を紹介します。 一覧表 以下の表は、Go のルーンリテラルおよび文字列リテラルで利用できる主要なエスケープシーケンスをまとめたものです。各行には対応する Unicode コード...",
+      "emoji": "📝",
+      "liked_count": 0
+    }
+  ]
+}
