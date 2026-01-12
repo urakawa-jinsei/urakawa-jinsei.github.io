@@ -1,6 +1,15 @@
 {
-  "last_updated": "2026-01-12T22:19:29.980531+00:00",
+  "last_updated": "2026-01-12T23:17:30.388912+00:00",
   "articles": [
+    {
+      "title": "gitでtagを作る方法を理解する",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/5226fed611d7fa",
+      "path": "/urakawa_jinsei/articles/5226fed611d7fa",
+      "published_at": "2026-01-12T23:00:05+00:00",
+      "summary": "tl;dr Gitのtagは、特定のコミットに「意味のある名前」を付ける仕組みです リリース管理や過去バージョンの参照を簡単にします 軽量tagと注釈付きtagの違いを理解できます git tag / git push --tags を使った一連の流れがわかります はじめに Gitを使っていて、「この時点をv1.0.0として残しておきたい」「過去のリリースをすぐに参照したい」と思ったことはありませんか？ そのようなときに使うのが tag です。 本記事では、Gitのtagとは何か、どのようなメリットがあるのか、そして実際にどのようなコマンドで作成・管理するのかについて解説し...",
+      "emoji": "📝",
+      "liked_count": 0
+    },
     {
       "title": "macで常にアプリをフルスクリーンで開く方法",
       "url": "https://zenn.dev/urakawa_jinsei/articles/750ef4092803e5",
@@ -169,15 +178,6 @@
       "path": "/urakawa_jinsei/articles/facf886c446dfb",
       "published_at": "2025-05-01T23:00:01+00:00",
       "summary": "はじめに Go 言語仕様で予約されているキーワード25個の一覧と、それぞれの説明および使用例を紹介します。 gotoやfallthroughなどは知らなかったので、良い機会になりました。 以下の語は Go 言語があらかじめ予約しているキーワードなので、変数名や関数名など自分で名前を付ける識別子には使えません。 https://go.dev/ref/spec#Keywords 一覧表 キーワード 説明 使用例 break ループ (for) や switch から抜ける for i := 0; i < 10; i++ { if i == 5 { break } ...",
-      "emoji": "📝",
-      "liked_count": 0
-    },
-    {
-      "title": "「誰でも爆速で理解できる！Go のルーンリテラル10個のエスケープシーケンスまとめ」",
-      "url": "https://zenn.dev/urakawa_jinsei/articles/5a6fbfeea9213b",
-      "path": "/urakawa_jinsei/articles/5a6fbfeea9213b",
-      "published_at": "2025-04-23T23:00:01+00:00",
-      "summary": "はじめに Go 言語では、単一の Unicode コードポイントを表す整数定数を ルーンリテラル（rune literal）として扱います。ルーンリテラルはシングルクォートで囲まれた 1 文字またはエスケープシーケンスで記述し、内部的には int32（別名 rune）型として扱われます。 本記事では、公式仕様書「Rune literals」に基づき、代表的なエスケープシーケンスの一覧と、それらを使った出力例を紹介します。 一覧表 以下の表は、Go のルーンリテラルおよび文字列リテラルで利用できる主要なエスケープシーケンスをまとめたものです。各行には対応する Unicode コード...",
       "emoji": "📝",
       "liked_count": 0
     }
