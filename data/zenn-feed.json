@@ -1,6 +1,15 @@
 {
-  "last_updated": "2026-01-19T22:22:08.042779+00:00",
+  "last_updated": "2026-01-19T23:20:53.425724+00:00",
   "articles": [
+    {
+      "title": "理解が最強という話",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/c735667c316707",
+      "path": "/urakawa_jinsei/articles/c735667c316707",
+      "published_at": "2026-01-19T23:00:02+00:00",
+      "summary": "tl;dr 理解とは「説明・応用・再現ができる状態」を指します 表面的な理解は一見早そうで、結果的に遠回りになりがちです 理解していれば失敗は減り、成長スピードは安定します 理解力は、人への説明・AIへの指示精度にも直結します はじめに 「とりあえず動いたからOK」「雰囲気でわかった気がする」。 そんな状態で先に進んでしまうことはありませんか？ 本記事では、「理解すること」をおろそかにしがちな人に向けて、なぜ理解が最強なのかについて解説していきます。 技術記事というよりは、エンジニアとして成長し続けるための思考の土台についてのお話です。 理解とは何か まず、「理解」の定義...",
+      "emoji": "📝",
+      "liked_count": 0
+    },
     {
       "title": "65%レイアウトUS配列キーボードでチルダ（~）とバッククオート（`）を入力する方法",
       "url": "https://zenn.dev/urakawa_jinsei/articles/62774e35653d1a",
@@ -169,15 +178,6 @@
       "path": "/urakawa_jinsei/articles/b31ef87d0c6a76",
       "published_at": "2025-06-15T23:00:01+00:00",
       "summary": "はじめに この記事は、MCPって何？という方が、初めの一歩を踏み出してみるための記事です。 公式のチュートリアルに従って、ファイルシステムMCPサーバーを体験します。 1. Claude for Desktopをインストール https://claude.ai/downloadで、Claude for Desktopをダウンロードして、インストールします。 2. ファイルシステムMCPサーバーを追加する まず、コンピュータでClaudeメニューを開き、「設定...」を選択します。これらは、アプリウィンドウ自体にある、アカウント設定ではないことに注意して下さい。 Macでは、次...",
-      "emoji": "📝",
-      "liked_count": 0
-    },
-    {
-      "title": "Cloud Run JobsのエラーをSlackに通知する",
-      "url": "https://zenn.dev/urakawa_jinsei/articles/db5be14145cc44",
-      "path": "/urakawa_jinsei/articles/db5be14145cc44",
-      "published_at": "2025-05-27T23:00:01+00:00",
-      "summary": "1. Slack 通知チャネルを準備する GCP コンソール → Notification channels を開く Slack セクションで Add new をクリックし、ワークスペースとチャンネルを認可・登録する 2. Logs Explorer でクエリを作成 GCP コンソール → Logs Explorer を開く クエリ欄に以下を入力し、Run で結果を確認 resource.type=\"cloud_run_job\" severity=\"ERROR\" ( resource.labels.job_name=\"your-cloud-run-jobs-...",
       "emoji": "📝",
       "liked_count": 0
     }
