@@ -1162,15 +1162,15 @@ ul, ol {
 }
 
 /* ===================================
-   Contact Section
+   Output Section
    =================================== */
-.contact-content {
+.output-content {
     text-align: center;
     max-width: 600px;
     margin: 0 auto;
 }
 
-.contact-description {
+.output-description {
     font-size: var(--font-size-lg);
     color: var(--color-text-secondary);
     margin-bottom: var(--spacing-3xl);

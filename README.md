@@ -84,7 +84,7 @@ http://localhost:8000
 | **Skills** | 技術スキル（プログレスバー付き） |
 | **Certifications** | 資格情報 |
 | **Articles** | Zennの最新記事（API連携） |
-| **Contact** | SNS・メディアリンク |
+| **Output** | SNS・メディアリンク |
 
 ## 🔗 External APIs
 
