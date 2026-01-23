@@ -1,6 +1,15 @@
 {
-  "last_updated": "2026-01-23T09:30:59.059362+00:00",
+  "last_updated": "2026-01-23T10:25:38.315757+00:00",
   "articles": [
+    {
+      "title": "Best Practices for Claude Code",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/2b50dd39098b6c",
+      "path": "/urakawa_jinsei/articles/2b50dd39098b6c",
+      "published_at": "2026-01-23T10:00:01+00:00",
+      "summary": "tl;dr Claude Codeは「指示→回答」ではなく「探索・計画・実装」を自律的に行うエージェント型開発環境です 最大の制約はコンテキストウィンドウであり、これを前提にした使い方が品質を左右します 検証手段（テスト・スクリーンショット・期待出力）を必ず与えることが最重要プラクティスです Plan Modeを活用し、「探索 → 計画 → 実装」を明確に分離すると失敗を防げます 本記事は公式ドキュメントを元に、実践的に整理しています はじめに Claude Codeは、Anthropicが提供するエージェント型コーディング環境です。 単なるチャットボットとは異なり、ファイ...",
+      "emoji": "📝",
+      "liked_count": 0
+    },
     {
       "title": "理解が最強という話",
       "url": "https://zenn.dev/urakawa_jinsei/articles/c735667c316707",
@@ -169,15 +178,6 @@
       "path": "/urakawa_jinsei/articles/0554c12d5a27d2",
       "published_at": "2025-06-16T23:00:02+00:00",
       "summary": "はじめに Cloud Run Jobsから、Cloud SQLへの接続確認をしていました。 正しいデータベースを指定しているはずでしたが、何度やっても、以下のエラーが発生します。 pq: database \"xxx\" does not exist なぜでしょうか？ 原因 データベース名の末尾に、空白が入っていたことが原因でした。 同じ経験をしたことがある人も多いのではないでしょうか？ 解決 デフォルトのデータベース（postgres）には接続できたので、データベース名の一覧を出力し、データベース名と、接続したいデータベース名が合っているか、それぞれのデータベース名の文字数を出...",
-      "emoji": "📝",
-      "liked_count": 0
-    },
-    {
-      "title": "MCPを体験するだけ",
-      "url": "https://zenn.dev/urakawa_jinsei/articles/b31ef87d0c6a76",
-      "path": "/urakawa_jinsei/articles/b31ef87d0c6a76",
-      "published_at": "2025-06-15T23:00:01+00:00",
-      "summary": "はじめに この記事は、MCPって何？という方が、初めの一歩を踏み出してみるための記事です。 公式のチュートリアルに従って、ファイルシステムMCPサーバーを体験します。 1. Claude for Desktopをインストール https://claude.ai/downloadで、Claude for Desktopをダウンロードして、インストールします。 2. ファイルシステムMCPサーバーを追加する まず、コンピュータでClaudeメニューを開き、「設定...」を選択します。これらは、アプリウィンドウ自体にある、アカウント設定ではないことに注意して下さい。 Macでは、次...",
       "emoji": "📝",
       "liked_count": 0
     }
