@@ -1315,3 +1315,4 @@ ul, ol {
 .stagger-children.visible > *:nth-child(4) { animation: fadeInUp 0.5s ease 0.4s forwards; }
 .stagger-children.visible > *:nth-child(5) { animation: fadeInUp 0.5s ease 0.5s forwards; }
 .stagger-children.visible > *:nth-child(6) { animation: fadeInUp 0.5s ease 0.6s forwards; }
+.stagger-children.visible > *:nth-child(7) { animation: fadeInUp 0.5s ease 0.6s forwards; }
