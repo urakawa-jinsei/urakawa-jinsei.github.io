@@ -105,6 +105,17 @@ function initNavigation() {
         navMenu.classList.toggle('active');
     });
 
+    // Close button event
+    const navClose = document.getElementById('nav-close');
+    if (navClose) {
+        navClose.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            navToggle.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
+    }
+
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             navToggle.classList.remove('active');
