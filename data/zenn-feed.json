@@ -1,6 +1,15 @@
 {
-  "last_updated": "2026-01-25T11:18:19.758953+00:00",
+  "last_updated": "2026-01-25T12:43:04.420013+00:00",
   "articles": [
+    {
+      "title": "【完全無料】Claude CodeをLocal LLMで実行してみる",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/2b707394d6c216",
+      "path": "/urakawa_jinsei/articles/2b707394d6c216",
+      "published_at": "2026-01-25T11:00:05+00:00",
+      "summary": "tl;dr Ollamaを使うと、Claude CodeをLocal LLM経由で無料実行できます ANTHROPIC_BASE_URL を差し替えることで、Claude Codeは公式API以外とも通信可能です m2 MacBook Air（16GB）＋ qwen2.5-coder:7b でも一応動作します ただし、実用レベルかというとかなり厳しいのが正直なところです はじめに Claude Codeを触っていて、「これ、ローカルのLLMで動かせないのかな？」と思ったことはありませんか？ 公式にはAnthropic APIを前提としていますが、実は Ollamaを使うこと...",
+      "emoji": "📝",
+      "liked_count": 0
+    },
     {
       "title": "【翻訳&まとめ】Best Practices for Claude Code",
       "url": "https://zenn.dev/urakawa_jinsei/articles/2b50dd39098b6c",
@@ -169,15 +178,6 @@
       "path": "/urakawa_jinsei/articles/059d54948e3da8",
       "published_at": "2025-07-07T23:00:01+00:00",
       "summary": "はじめに Cloud Storageへのファイルアップロードのために、gcloud storage cpコマンドを使用すると、Cloud Loggingに、storage.objects.get No such objectというエラーが出力されます。 ファイルアップロードのコマンドをgsutil cpコマンドに変更すると、上記のエラーは出なくなります。 なぜでしょうか？ gcloud storage cpコマンドとgsutil cpコマンドの違いを調べてみました。 Cloud Logging 原因 gcloud storage cpは、パフォーマンス向上のために並列・分割アッ...",
-      "emoji": "📝",
-      "liked_count": 0
-    },
-    {
-      "title": "【Go】pq: database \"xxx\" does not existにハマった話",
-      "url": "https://zenn.dev/urakawa_jinsei/articles/0554c12d5a27d2",
-      "path": "/urakawa_jinsei/articles/0554c12d5a27d2",
-      "published_at": "2025-06-16T23:00:02+00:00",
-      "summary": "はじめに Cloud Run Jobsから、Cloud SQLへの接続確認をしていました。 正しいデータベースを指定しているはずでしたが、何度やっても、以下のエラーが発生します。 pq: database \"xxx\" does not exist なぜでしょうか？ 原因 データベース名の末尾に、空白が入っていたことが原因でした。 同じ経験をしたことがある人も多いのではないでしょうか？ 解決 デフォルトのデータベース（postgres）には接続できたので、データベース名の一覧を出力し、データベース名と、接続したいデータベース名が合っているか、それぞれのデータベース名の文字数を出...",
       "emoji": "📝",
       "liked_count": 0
     }
