@@ -1,6 +1,15 @@
 {
-  "last_updated": "2026-01-29T11:31:00.105830+00:00",
+  "last_updated": "2026-01-29T12:58:24.440330+00:00",
   "articles": [
+    {
+      "title": "B-Tree Indexアンチパターン",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/19805983ee2dfc",
+      "path": "/urakawa_jinsei/articles/19805983ee2dfc",
+      "published_at": "2026-01-29T12:10:19+00:00",
+      "summary": "tl;dr B-Treeインデックスが効かなくなる典型的なSQLパターンを具体例で理解できます 演算・関数・IS NULL・否定形・LIKE・暗黙の型変換がなぜアンチパターンかを説明します EXPLAINの結果が悪化する理由をB-Treeの性質から説明します 初心者でもインデックスを活かすSQLの書き方がわかるようになります はじめに SQLを書いていると、「インデックスを貼っているのに遅い」と感じたことはありませんか？ その原因の多くは、B-Treeインデックスの使い方を壊すSQLの書き方にあります。 本記事では、達人に学ぶDB設計徹底指南書 第2版 を参照しながら、 B...",
+      "emoji": "📝",
+      "liked_count": 0
+    },
     {
       "title": "【完全無料】Claude CodeをLocal LLMで実行してみる",
       "url": "https://zenn.dev/urakawa_jinsei/articles/2b707394d6c216",
@@ -169,15 +178,6 @@
       "path": "/urakawa_jinsei/articles/065cc07cc1ad05",
       "published_at": "2025-08-06T23:00:01+00:00",
       "summary": "はじめに 大量データを一括で挿入したい場面は多いのではないでしょうか？ 例えばバッチ処理で数百万件のデータを扱うとき、通常のINSERT文を1件ずつ実行すると、ネットワーク往復やトランザクションオーバーヘッドで処理時間が膨大になります。 PostgreSQLが提供するCOPYプロトコルを利用したbulk insert（まとめて挿入）を使うことで、シーケンシャルなINSERTと比べて数十倍〜数百倍の高速化が可能です。 Go向けORMツールのsqlcでは、コメントに:copyfromを付与するだけでこのCOPYプロトコルを簡単に利用できます。[1] 結論 SQLファイルのコメントに:...",
-      "emoji": "📝",
-      "liked_count": 0
-    },
-    {
-      "title": "gcloud storage cpで発生する storage.objects.get No such object エラーの真相",
-      "url": "https://zenn.dev/urakawa_jinsei/articles/059d54948e3da8",
-      "path": "/urakawa_jinsei/articles/059d54948e3da8",
-      "published_at": "2025-07-07T23:00:01+00:00",
-      "summary": "はじめに Cloud Storageへのファイルアップロードのために、gcloud storage cpコマンドを使用すると、Cloud Loggingに、storage.objects.get No such objectというエラーが出力されます。 ファイルアップロードのコマンドをgsutil cpコマンドに変更すると、上記のエラーは出なくなります。 なぜでしょうか？ gcloud storage cpコマンドとgsutil cpコマンドの違いを調べてみました。 Cloud Logging 原因 gcloud storage cpは、パフォーマンス向上のために並列・分割アッ...",
       "emoji": "📝",
       "liked_count": 0
     }
