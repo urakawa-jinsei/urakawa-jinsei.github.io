@@ -1,6 +1,15 @@
 {
-  "last_updated": "2026-02-09T23:37:02.177486+00:00",
+  "last_updated": "2026-02-10T02:29:05.467778+00:00",
   "articles": [
+    {
+      "title": "DIコンテナとは？依存関係を整理してGoの設計をシンプルにする方法",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/8908855bfba0ab",
+      "path": "/urakawa_jinsei/articles/8908855bfba0ab",
+      "published_at": "2026-02-09T23:00:02+00:00",
+      "summary": "tl;dr DI（Dependency Injection）は、依存関係を外から注入することでコードの責務を分離する設計手法です DIコンテナは、依存関係の生成と解決を自動化する仕組みを提供します uber-go/dig を使うことで、GoでもシンプルにDIを導入できます DIコンテナを使うと、newの連鎖をなくし、テストしやすい構造を実現できます はじめに Goでアプリケーションを書いていると、次のようなコードに心当たりはありませんか？ main関数でnewが大量に並んでいる 依存関係が増えるたびに引数が増えていく テストを書こうとするとモック差し替えが大変 こうした課...",
+      "emoji": "📝",
+      "liked_count": 0
+    },
     {
       "title": "【翻訳&まとめ】The complete guide to building skills for Claude",
       "url": "https://zenn.dev/urakawa_jinsei/articles/d7f59cbc0db612",
@@ -169,15 +178,6 @@
       "path": "/urakawa_jinsei/articles/a21e93692ca715",
       "published_at": "2025-08-19T23:00:06+00:00",
       "summary": "はじめに Goでプログラムを書いていると、 go build go run go test …など、毎回同じコマンドを入力するのが面倒になることありませんか？ そんなときに便利なのが Makefile です。 公式ドキュメントでは「依存関係に応じて必要な処理だけを実行するツール」と説明されていますが、Goプロジェクトに限って言えば 「よく使うコマンドをまとめておける便利な仕組み」 と考えるとわかりやすいです。 最小のMakefileを書いてみる まずはGoで「Hello, World」を出力するプログラムを作りましょう。 main.go package main impo...",
-      "emoji": "📝",
-      "liked_count": 0
-    },
-    {
-      "title": "【Go】複数のCloud Run Jobsをモノレポで管理する",
-      "url": "https://zenn.dev/urakawa_jinsei/articles/07da4bf827c73a",
-      "path": "/urakawa_jinsei/articles/07da4bf827c73a",
-      "published_at": "2025-08-07T23:00:01+00:00",
-      "summary": "はじめに 本記事のゴール モノレポ構成でJobごとのディレクトリを整理 Dockerマルチステージビルドでバイナリを効率的に生成 Cloud Buildのループ処理でCI/CDを自動化 ディレクトリ構成 ディレクトリ構成 . ├── cloudbuild.yaml ├── cmd │ ├── cloud-run-jobs1 │ │ ├── Dockerfile │ │ └── main.go │ ├── cloud-run-jobs2 │ │ ├── Dockerfile │ │ └── main.go │ └── cloud...",
       "emoji": "📝",
       "liked_count": 0
     }
