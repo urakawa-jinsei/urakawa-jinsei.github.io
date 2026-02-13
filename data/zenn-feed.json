@@ -1,6 +1,15 @@
 {
-  "last_updated": "2026-02-12T23:29:27.739828+00:00",
+  "last_updated": "2026-02-13T02:22:44.718694+00:00",
   "articles": [
+    {
+      "title": "インデックス以外でできるDBパフォーマンスチューニング入門",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/4077d617f2fcae",
+      "path": "/urakawa_jinsei/articles/4077d617f2fcae",
+      "published_at": "2026-02-12T23:00:06+00:00",
+      "summary": "tl;dr インデックスだけに頼らないDBパフォーマンスチューニング手法を整理します パーティション、ヒント句、パラレルクエリ、オンメモリという4つの代表的手段を解説します それぞれの概要・具体例・メリットとデメリットを把握できます 適切な使いどころと注意点がわかり、実務での選択肢が広がります はじめに DBのパフォーマンスチューニングというと、まず「インデックスを張る」ことを思い浮かべる方が多いのではないでしょうか。 もちろんインデックスは非常に重要ですが、それだけでは解決できないケースも少なくありません。 本記事では、達人に学ぶDB設計徹底指南書 第2版 を参照しつつ、イ...",
+      "emoji": "📝",
+      "liked_count": 0
+    },
     {
       "title": "DIコンテナとは？依存関係を整理してGoの設計をシンプルにする方法",
       "url": "https://zenn.dev/urakawa_jinsei/articles/8908855bfba0ab",
@@ -169,15 +178,6 @@
       "path": "/urakawa_jinsei/articles/8706c1ccb50c97",
       "published_at": "2025-08-26T23:00:01+00:00",
       "summary": "はじめに Go の標準ライブラリには、効率や安全性に配慮された設計が随所に見られます。 今回は、その中でもよく使われる strings.Join を題材に、「コードをどう読み解けばよいか」を順に見ていきます。 背景・目的 例えば、このようなコードがあります。 // Join concatenates the elements of its first argument to create a single string. // The separator string sep is placed between elements in the resulting string. ...",
-      "emoji": "📝",
-      "liked_count": 0
-    },
-    {
-      "title": "Makefile入門｜Goで学ぶ、はじめてのMakefile",
-      "url": "https://zenn.dev/urakawa_jinsei/articles/a21e93692ca715",
-      "path": "/urakawa_jinsei/articles/a21e93692ca715",
-      "published_at": "2025-08-19T23:00:06+00:00",
-      "summary": "はじめに Goでプログラムを書いていると、 go build go run go test …など、毎回同じコマンドを入力するのが面倒になることありませんか？ そんなときに便利なのが Makefile です。 公式ドキュメントでは「依存関係に応じて必要な処理だけを実行するツール」と説明されていますが、Goプロジェクトに限って言えば 「よく使うコマンドをまとめておける便利な仕組み」 と考えるとわかりやすいです。 最小のMakefileを書いてみる まずはGoで「Hello, World」を出力するプログラムを作りましょう。 main.go package main impo...",
       "emoji": "📝",
       "liked_count": 0
     }
