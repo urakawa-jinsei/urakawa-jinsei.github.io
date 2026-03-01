@@ -1,6 +1,15 @@
 {
-  "last_updated": "2026-03-01T22:24:25.133474+00:00",
+  "last_updated": "2026-03-01T23:24:22.802955+00:00",
   "articles": [
+    {
+      "title": "powerlevel10kでかっこいいターミナルを作る",
+      "url": "https://zenn.dev/urakawa_jinsei/articles/dccd3dcfa0dc0e",
+      "path": "/urakawa_jinsei/articles/dccd3dcfa0dc0e",
+      "published_at": "2026-03-01T23:00:01+00:00",
+      "summary": "powerlevel10kのイメージ tl;dr powerlevel10k を使うと、Gitブランチや実行時間を表示するリッチなプロンプトを簡単に実現できます。 MesloLGS NF フォントをインストールし、ターミナルに設定することが重要です。 Homebrewでインストールし、.zshrc に設定を追記するだけで導入可能です。 p10k configure を実行すれば、対話形式で自分好みのテーマを設定できます。 はじめに 「ターミナルが地味でテンションが上がらない…」と思ったことはありませんか？ 日々の開発で多くの時間を過ごすターミナル環境を整えることは、生産...",
+      "emoji": "📝",
+      "liked_count": 0
+    },
     {
       "title": "My Habits as a Software Engineer",
       "url": "https://zenn.dev/urakawa_jinsei/articles/cca0275033ec4c",
@@ -169,15 +178,6 @@
       "path": "/urakawa_jinsei/articles/576e4736cda25e",
       "published_at": "2025-12-18T23:00:06+00:00",
       "summary": "はじめに APIを実装していると、「同じリクエストが複数回送られてきたらどうなるのか？」と疑問に思ったことはありませんか？ 特に、決済処理やユーザー登録のような失敗が許されないAPIでは、この問題は非常に重要です。 本記事では、APIに冪等性を追加する方法について、概念の整理からデータベース設計、実際のAPIの流れまでを段階的に解説していきます。 冪等性とは何か 冪等性（Idempotency）の定義 冪等性とは、「同じ操作を何度実行しても、結果が変わらない性質」を指します。 これは数学や関数型プログラミング由来の概念ですが、Web APIの設計においても非常に重要です。 つ...",
-      "emoji": "📝",
-      "liked_count": 0
-    },
-    {
-      "title": "PostgreSQLのパフォーマンスチューニング入門: インデックスの威力を体感せよ",
-      "url": "https://zenn.dev/urakawa_jinsei/articles/e20e1f76f5109f",
-      "path": "/urakawa_jinsei/articles/e20e1f76f5109f",
-      "published_at": "2025-09-09T23:00:06+00:00",
-      "summary": "はじめに データベースのパフォーマンスチューニングって難しそう…と思っていませんか？ 今回は、シーケンシャルスキャン（Seq Scan）になっているクエリをインデックススキャン（Index Scan）に変えることで、クエリを劇的に高速化する手順を実測値つきでまとめます。 途中で実行計画の読み方やParallel Seq Scan / Gatherのポイントも押さえます。 EXPLAIN ANALYZE は計測オーバーヘッドが乗るので、素の実行より遅くなることがあります。数値は目安として見てください。(PostgreSQL) 環境構築（Docker） docker-comp...",
       "emoji": "📝",
       "liked_count": 0
     }
