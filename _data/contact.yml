@@ -3,8 +3,12 @@
 - type: github
   icon: "fab fa-github"
 
-- type: twitter
-  icon: "fa-brands fa-x-twitter"
+# - type: twitter
+#   icon: "fa-brands fa-x-twitter"
+
+- type: zenn
+  icon: "zenn"
+  url: https://zenn.dev/urakawa_jinsei
 
 - type: linkedin
   icon: "fab fa-linkedin" # icons powered by <https://fontawesome.com/>

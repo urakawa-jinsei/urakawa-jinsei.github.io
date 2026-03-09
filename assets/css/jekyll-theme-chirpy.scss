@@ -1,0 +1,18 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+#sidebar i.zenn {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background: center / contain no-repeat url('/assets/img/zenn.svg');
+}
