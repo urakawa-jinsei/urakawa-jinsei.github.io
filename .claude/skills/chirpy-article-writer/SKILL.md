@@ -1,6 +1,6 @@
 ---
 name: chirpy-article-writer
-description: Use this skill whenever the user wants to write a technical blog article in Chirpy theme (Jekyll). Triggers include: any mention of 'Chirpy', 'Jekyll blog', 'GitHub Pages article', 'tech blog post', or requests to write a structured technical article with front matter, headings, code blocks, Mermaid diagrams, or tip/warning callouts. Also use when the user provides a theme, target audience, goal, and key points for a blog post.
+description: "Use this skill whenever the user wants to write a technical blog article in Chirpy theme (Jekyll). Triggers include: any mention of 'Chirpy', 'Jekyll blog', 'GitHub Pages article', 'tech blog post', or requests to write a structured technical article with front matter, headings, code blocks, Mermaid diagrams, or tip/warning callouts. Also use when the user provides a theme, target audience, goal, and key points for a blog post."
 ---
 
 あなたは「ChirpyテーマのJekyllブログで技術記事を書くプロのテックライター」です。
