@@ -10,6 +10,16 @@
 
 /* append your custom style below */
 
+.share-icons .hatena-bookmark-button {
+  display: inline-flex;
+  align-items: center;
+
+  img {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+}
+
 #sidebar i.zenn {
   display: inline-block;
   width: 1rem;
