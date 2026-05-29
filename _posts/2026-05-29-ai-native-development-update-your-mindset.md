@@ -1,7 +1,7 @@
 ---
 title: "AIネイティブな開発へ——エンジニアの常識をアップデートする"
 description: "AIを最大限に活用できないエンジニアチームが陥るボトルネックを整理し、環境・テスト・マインドの3つの観点から、AIファーストな開発への移行を考察します。"
-date: 2026-05-25 09:00:00 +0900
+date: 2026-05-29 09:00:00 +0900
 categories: [AI, Engineering]
 tags: [ai, mcp, testing, developer-experience, mindset]
 mermaid: true
